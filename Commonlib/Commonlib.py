@@ -61,6 +61,17 @@ class Commonlib():
             except:pass
             t.sleep(1)
 
+    def tryFindToclick(self,value):
+        """循环去找元素去点击"""
+        for i in range(10):
+            try:
+                self.dr.find_element("xpath",value).click()
+                break
+            except:pass
+            t.sleep(1)
+        else:
+            print(u"还没来得是输入值呢")
+
     def moveTopDown(self):
         """控制滚动条"""
         js = "var q=document.documentElement.scrollTop=300"
@@ -86,12 +97,31 @@ class Commonlib():
         gtt = self.dr.find_element("xpath",value).text
         return gtt
 
+
+    def tryTimesleep(self,value):
+        """每一秒去寻找切换iframe框"""
+        for i in range(10):
+            try:
+                self.dr.switch_to.frame(value)
+            except:pass
+            t.sleep(1)
+
+    def trySendKeys(self,value,connect):
+        """尝试去输入值"""
+        for i in range(10):
+            try:
+                self.dr.find_element_by_xpath(value).send_keys(connect)
+                break
+            except:pass
+            t.sleep(1)
+        else:
+            print("Find xpath filed")
+
     def tryText(self,value):
         """尝试获取文字的函数"""
         for i in range(10):
             try:
                  gt = self.dr.find_element("xpath",value).text
-                 print(gt)
                  return gt
             except:pass
             t.sleep(1)

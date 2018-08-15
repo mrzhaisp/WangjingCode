@@ -3,9 +3,14 @@
     <login>
         <username>tdr</username>
         <password>Cmcc@121122</password>
-        <epxect>修改密码</epxect>
+        <epxect>客户服务</epxect>
     </login>
 
+    <shenpi>
+        <username>tdr</username>
+        <password>Cmcc@121122</password>
+        <epxect>送专线勘察和调度管理员审批</epxect>
+    </shenpi>
 
 </node>
 
