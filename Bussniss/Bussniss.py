@@ -1,6 +1,9 @@
 #coding=utf-8
 __author__ = 'zgd'
 from Commonlib.Commonlib import Commonlib
+from Commonlib.MysqlClient import MysqlClient
+m = MysqlClient()
+import time
 import re
 import sys
 reload(sys)
@@ -283,10 +286,13 @@ class Bussniss():
         self.p.activeEvent(u".//*[contains(text(),'送下一环节')]/following-sibling::div[1]/div[2]/div")
         self.p.tryFindToclick(u".//*[contains(text(),'送下一环节')]/ancestor::div[5]/following-sibling::div[1]/descendant::span[text()='确定']/parent::button")
         poorderInfo = self.p.tryText(u".//span[contains(text(),'提交成功')]")
-        print(poorderInfo)
+        # print(poorderInfo)
         poorderInfo1 = re.split(':',poorderInfo)
         poorderNumber = poorderInfo1[-1]
         print("*"*30,poorderNumber)
+        now = time.strftime("%Y-%m-%d %H_%M_%S")
+        self.p.m.dateAdd(now,poorderNumber)
+
 p = Bussniss()
 p.getPoorder("tdr","Cmcc@121122")
 
