@@ -1,54 +1,21 @@
 #coding=utf-8
 __author__ = 'zgd'
-# import MySQLdb
-
-import pymysql
+from MySQLdb import *
 class MysqlClient():
-    def insertDate(self):
+    def dateAdd(self):
         try:
             #创建数据库连接
-            conn = connect(
-                host = 'localhost',
-                port = 3306,
-                db = 'poorder',
-                user='root',
-                passwd='mysql',
-                charset='utf8')
+            conn = connect(host='127.0.0.1', port=3306, db='poorderinfo', user='root', passwd='mysql', charset='utf8')
             #创建游标
             cs1 = conn.cursor()
-            sql = 'INSERT INTO poorder VALUES (%s,%s,%s)'
-            dates = [
-                (1,'1898912121','2017-01-08')
-                ]
-            cs1.execute(sql,dates)
-            cs1.commit()
+            count = cs1.execute("insert into poorders (poordernumber,createdate) VALUES ('000808804832432','20180815232')")
+            print(count)
+            conn.commit()
         except Exception,e:
             print(e)
         finally:
             cs1.close()
             conn.close()
-
 if __name__=='__main__':
-
-    M2 = MysqlClient()
-    M2.insertDate()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    add = MysqlClient()
+    add.dateAdd()

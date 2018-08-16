@@ -15,7 +15,7 @@ class PoorderShenpi(unittest.TestCase):
 
     def test001(self):
         '''测试username为tdr时审批人是否正常'''
-        self.assertEquals(self.b.getPooder(
+        self.assertEquals(self.b.pooderShenpi(
                 r.readxml("shenpi","username"),
 
                 r.readxml("shenpi","password")) ,
