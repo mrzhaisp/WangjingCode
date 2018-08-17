@@ -9,7 +9,7 @@ class MysqlClient():
             conn = connect(host='127.0.0.1', port=3306, db='poorderinfo', user='root', passwd='mysql', charset='utf8')
             #创建游标
             cs1 = conn.cursor()
-            count = cs1.execute("insert into poorders (poordernumber,createdate) VALUES (creaTeDate,poorDerNumBer)")
+            count = cs1.execute("insert into poorders (poordernumber,createdate) VALUES ("+poorDerNumBer+","+creaTeDate+")")
             print(count)
             conn.commit()
         except Exception,e:
