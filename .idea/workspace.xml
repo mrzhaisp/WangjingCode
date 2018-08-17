@@ -31,7 +31,7 @@
     <SUITE FILE_PATH="coverage/WangjingCode$log6.coverage" NAME="log6 Coverage Results" MODIFIED="1533786618789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/WangjingCode$shen3.coverage" NAME="shen3 Coverage Results" MODIFIED="1534331316503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/WangjingCode$1111.coverage" NAME="1111 Coverage Results" MODIFIED="1534337397426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCopy" />
-    <SUITE FILE_PATH="coverage/WangjingCode$Bussniss.coverage" NAME="Bussniss Coverage Results" MODIFIED="1534424650074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bussniss" />
+    <SUITE FILE_PATH="coverage/WangjingCode$Bussniss.coverage" NAME="Bussniss Coverage Results" MODIFIED="1534484049008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bussniss" />
     <SUITE FILE_PATH="coverage/WangjingCode$log111.coverage" NAME="log111 Coverage Results" MODIFIED="1534337539427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCopy" />
     <SUITE FILE_PATH="coverage/WangjingCode$2.coverage" NAME="2 Coverage Results" MODIFIED="1533867962111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/WangjingCode$1212.coverage" NAME="1212 Coverage Results" MODIFIED="1534337495838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCopy" />
@@ -52,6 +52,7 @@
     <SUITE FILE_PATH="coverage/WangjingCode$shenpi1.coverage" NAME="shenpi1 Coverage Results" MODIFIED="1534330128480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/WangjingCode$1.coverage" NAME="1 Coverage Results" MODIFIED="1533892001036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCopy" />
     <SUITE FILE_PATH="coverage/WangjingCode$Readxml.coverage" NAME="Readxml Coverage Results" MODIFIED="1533867057973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Commonlib" />
+    <SUITE FILE_PATH="coverage/WangjingCode$MysqlClient.coverage" NAME="MysqlClient Coverage Results" MODIFIED="1534486731996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Commonlib" />
     <SUITE FILE_PATH="coverage/WangjingCode$log7.coverage" NAME="log7 Coverage Results" MODIFIED="1533786658382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/WangjingCode$909090.coverage" NAME="909090 Coverage Results" MODIFIED="1533878279333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCopy" />
     <SUITE FILE_PATH="coverage/WangjingCode$a1.coverage" NAME="a1 Coverage Results" MODIFIED="1533869244861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
@@ -75,41 +76,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="poorderShenPi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/poorderShenPi.py">
+      <file leaf-file-name="001.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestCopy/001.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="e#33#71#0" expanded="true" />
+                <marker date="1534481878104" expanded="true" signature="39:128" placeholder="insert into ..." />
+                <marker date="1534481878104" expanded="true" signature="137:199" placeholder="insert into ..." />
+                <marker date="1534481878104" expanded="true" signature="137:222" placeholder="insert into ..." />
+                <marker date="1534481878104" expanded="true" signature="137:226" placeholder="insert into ..." />
+                <marker date="1534481878104" expanded="true" signature="137:228" placeholder="insert into ..." />
+                <marker date="1534481878104" expanded="true" signature="137:267" placeholder="insert into ..." />
+                <marker date="1534481878104" expanded="true" signature="137:268" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MysqlClient.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="97" selection-start-line="11" selection-start-column="97" selection-end-line="11" selection-end-column="97" />
-              <folding>
-                <element signature="e#33#54#0" expanded="true" />
-                <marker date="1534424126910" expanded="true" signature="372:453" placeholder="insert into ..." />
-                <marker date="1534424126910" expanded="true" signature="884:935" placeholder="SELECT a.poo..poorders..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bussniss.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bussniss.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68791944">
-              <caret line="293" column="43" selection-start-line="293" selection-start-column="43" selection-end-line="293" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="294" column="43" selection-start-line="294" selection-start-column="37" selection-end-line="294" selection-end-column="43" />
               <folding>
                 <element signature="e#33#74#0" expanded="true" />
-                <element signature="e#335#1118#0" expanded="false" />
-                <element signature="e#1222#7416#0" expanded="false" />
+                <element signature="e#348#1131#0" expanded="false" />
+                <element signature="e#1235#7429#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -122,6 +115,24 @@
               <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#33#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MysqlClient.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49889135">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding>
+                <element signature="e#33#54#0" expanded="true" />
+                <element signature="e#843#1446#0" expanded="false" />
+                <marker date="1534486539910" expanded="true" signature="560:623" placeholder="insert into ..." />
+                <marker date="1534486539910" expanded="true" signature="560:632" placeholder="insert into ..." />
+                <marker date="1534486539910" expanded="true" signature="560:640" placeholder="insert into ..." />
+                <marker date="1534486539910" expanded="true" signature="560:1824" placeholder="insert into ..." />
+                <marker date="1534486539910" expanded="true" signature="1071:1122" placeholder="SELECT a.poo..poorders..." />
               </folding>
             </state>
           </provider>
@@ -150,8 +161,9 @@
         <option value="$PROJECT_DIR$/DataShare/wangjing.xml" />
         <option value="$PROJECT_DIR$/TestCopy/rezhengze.py" />
         <option value="$PROJECT_DIR$/Commonlib/MysqlInSe.py" />
-        <option value="$PROJECT_DIR$/Commonlib/MysqlClient.py" />
+        <option value="$PROJECT_DIR$/TestCopy/001.py" />
         <option value="$PROJECT_DIR$/Bussniss/Bussniss.py" />
+        <option value="$PROJECT_DIR$/Commonlib/MysqlClient.py" />
       </list>
     </option>
   </component>
@@ -251,6 +263,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WangjingCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WangjingCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bussniss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -271,7 +297,7 @@
       <recent name="D:\WangjingCode\Bussniss" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Bussniss">
+  <component name="RunManager" selected="Python.MysqlClient">
     <configuration default="false" name="MysqlInSe" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -496,6 +522,24 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="MysqlClient" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Commonlib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="WangjingCode" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Commonlib/MysqlClient.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="log111" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -514,10 +558,11 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.log111" />
-      <item index="1" class="java.lang.String" itemvalue="Python.MysqlInSe" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Bussniss" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.MysqlClient" />
+      <item index="1" class="java.lang.String" itemvalue="Python.log111" />
+      <item index="2" class="java.lang.String" itemvalue="Python.MysqlInSe" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Bussniss" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -549,17 +594,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18005952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21130952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.49702382" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1962775" sideWeight="0.50595236" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.49702382" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4467005" sideWeight="0.4940476" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18781726" sideWeight="0.4940476" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.49702382" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -593,26 +638,15 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test/a1login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#33#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataShare/wangjing.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,8 +666,12 @@
           <caret line="3" column="13" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="e#33#54#0" expanded="true" />
-            <marker date="1534424126910" expanded="true" signature="372:453" placeholder="insert into ..." />
-            <marker date="1534424126910" expanded="true" signature="884:935" placeholder="SELECT a.poo..poorders..." />
+            <element signature="e#843#1446#0" expanded="false" />
+            <marker date="1534486539910" expanded="true" signature="560:623" placeholder="insert into ..." />
+            <marker date="1534486539910" expanded="true" signature="560:632" placeholder="insert into ..." />
+            <marker date="1534486539910" expanded="true" signature="560:640" placeholder="insert into ..." />
+            <marker date="1534486539910" expanded="true" signature="560:1824" placeholder="insert into ..." />
+            <marker date="1534486539910" expanded="true" signature="1071:1122" placeholder="SELECT a.poo..poorders..." />
           </folding>
         </state>
       </provider>
@@ -651,8 +689,8 @@
           <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="66" />
           <folding>
             <element signature="e#33#74#0" expanded="true" />
-            <element signature="e#335#1118#0" expanded="false" />
-            <element signature="e#1222#7416#0" expanded="false" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -661,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,8 +749,8 @@
           <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding>
             <element signature="e#33#74#0" expanded="true" />
-            <element signature="e#335#1118#0" expanded="false" />
-            <element signature="e#1222#7416#0" expanded="false" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -723,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,8 +802,8 @@
           <caret line="143" column="15" selection-start-line="143" selection-start-column="15" selection-end-line="143" selection-end-column="15" />
           <folding>
             <element signature="e#33#74#0" expanded="true" />
-            <element signature="e#335#1118#0" expanded="false" />
-            <element signature="e#1222#7416#0" expanded="false" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -778,7 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,8 +855,8 @@
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
             <element signature="e#33#74#0" expanded="true" />
-            <element signature="e#335#1118#0" expanded="false" />
-            <element signature="e#1222#7416#0" expanded="false" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -840,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,8 +891,8 @@
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
             <element signature="e#33#74#0" expanded="true" />
-            <element signature="e#335#1118#0" expanded="false" />
-            <element signature="e#1222#7416#0" expanded="false" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -877,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="20" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,8 +927,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#33#74#0" expanded="true" />
-            <element signature="e#335#1118#0" expanded="false" />
-            <element signature="e#1222#7416#0" expanded="false" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -926,8 +956,8 @@
           <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
           <folding>
             <element signature="e#33#74#0" expanded="true" />
-            <element signature="e#335#1118#0" expanded="false" />
-            <element signature="e#1222#7416#0" expanded="false" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -955,8 +985,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#33#74#0" expanded="true" />
-            <element signature="e#335#1118#0" expanded="false" />
-            <element signature="e#1222#7416#0" expanded="false" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -996,7 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,7 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,6 +1056,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TestCopy/001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1534481878104" expanded="true" signature="39:128" placeholder="insert into ..." />
+            <marker date="1534481878104" expanded="true" signature="137:199" placeholder="insert into ..." />
+            <marker date="1534481878104" expanded="true" signature="137:222" placeholder="insert into ..." />
+            <marker date="1534481878104" expanded="true" signature="137:226" placeholder="insert into ..." />
+            <marker date="1534481878104" expanded="true" signature="137:228" placeholder="insert into ..." />
+            <marker date="1534481878104" expanded="true" signature="137:267" placeholder="insert into ..." />
+            <marker date="1534481878104" expanded="true" signature="137:268" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/poorderShenPi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40106952">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Commonlib/Readxml.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1036,36 +1090,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="97" selection-start-line="11" selection-start-column="97" selection-end-line="11" selection-end-column="97" />
-          <folding>
-            <element signature="e#33#54#0" expanded="true" />
-            <marker date="1534424126910" expanded="true" signature="372:453" placeholder="insert into ..." />
-            <marker date="1534424126910" expanded="true" signature="884:935" placeholder="SELECT a.poo..poorders..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/poorderShenPi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#33#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68791944">
-          <caret line="293" column="43" selection-start-line="293" selection-start-column="43" selection-end-line="293" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="294" column="43" selection-start-line="294" selection-start-column="37" selection-end-line="294" selection-end-column="43" />
           <folding>
             <element signature="e#33#74#0" expanded="true" />
-            <element signature="e#335#1118#0" expanded="false" />
-            <element signature="e#1222#7416#0" expanded="false" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49889135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#33#54#0" expanded="true" />
+            <element signature="e#843#1446#0" expanded="false" />
+            <marker date="1534486539910" expanded="true" signature="560:623" placeholder="insert into ..." />
+            <marker date="1534486539910" expanded="true" signature="560:632" placeholder="insert into ..." />
+            <marker date="1534486539910" expanded="true" signature="560:640" placeholder="insert into ..." />
+            <marker date="1534486539910" expanded="true" signature="560:1824" placeholder="insert into ..." />
+            <marker date="1534486539910" expanded="true" signature="1071:1122" placeholder="SELECT a.poo..poorders..." />
           </folding>
         </state>
       </provider>

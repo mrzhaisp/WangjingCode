@@ -2,7 +2,7 @@
 __author__ = 'zgd'
 from Commonlib.Commonlib import Commonlib
 from Commonlib.MysqlClient import MysqlClient
-m = MysqlClient()
+
 import time
 import re
 import sys
@@ -11,7 +11,7 @@ sys.setdefaultencoding('utf-8')
 class Bussniss():
     def __init__(self):
         self.p = Commonlib()
-
+        self.m = MysqlClient()
     def login(self,username,password):
         '''定义登陆函数'''
         # self.p.Login("http://10.248.26.37/ESOP/Login/login.do","tdr","Cmcc@121122")
@@ -288,11 +288,12 @@ class Bussniss():
         poorderInfo = self.p.tryText(u".//span[contains(text(),'提交成功')]")
         # print(poorderInfo)
         poorderInfo1 = re.split(':',poorderInfo)
-        poorderNumber = poorderInfo1[-1]
-        print("*"*30,poorderNumber)
-        now = time.strftime("%Y-%m-%d %H_%M_%S")
-        self.p.m.dateAdd(now,poorderNumber)
-
+        poorDerNumBer = poorderInfo1[-1]
+        # print("*"*30,poorDerNumBer)
+        creaTeDate= time.strftime("%Y-%m-%d %H:%M:%S")
+        ocdtag="ocdzykc"
+        self.m.dateAdd(poorDerNumBer,ocdtag,creaTeDate)
+        return poorDerNumBer
 p = Bussniss()
 p.getPoorder("tdr","Cmcc@121122")
 
