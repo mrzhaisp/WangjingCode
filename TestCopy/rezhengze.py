@@ -18,7 +18,8 @@ class TESTLOG(unittest.TestCase):
         self.assertEquals('zhangsa','zhangsa')
 
     def test003(self):
-        self.assertRegexpMatches(u'0001808156555437', r"^000\d{13}$")
+        # self.assertRegexpMatches(u'0001808156555437', r"^000\d{13}$")
+        self.assertRegexpMatches(u'0001808156555437', "^.{15}$")
         print('--------****************-----------')
 
 

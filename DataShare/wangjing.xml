@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <node>
+
+<!--登录是否正常    -->
     <login>
         <username>tdr</username>
         <password>Cmcc@121122</password>
         <epxect>客户服务</epxect>
     </login>
 
+
+<!--订单审批人    -->
     <shenpi>
         <username>tdr</username>
         <password>Cmcc@121122</password>
         <epxect>送专线勘察和调度管理员审批</epxect>
     </shenpi>
 
+<!--poordernumber规则-->
     <poorder>
         <username>tdr</username>
         <password>Cmcc@121122</password>
-        <epxect></epxect>
+        <epxect>r"^000\d{13}$"</epxect>
     </poorder>
 
 
