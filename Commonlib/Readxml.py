@@ -16,7 +16,7 @@ class Readxml():
         #找到login  组下的username节点里的值
         # secondnode = firstnode.getElementsByTagName("epxect")[0].firstChild.data
         secondnode = firstnode.getElementsByTagName(twoNode)[0].firstChild.data
-        print(secondnode)
+        # print(secondnode)
         return secondnode
 #
 # p = Readxml()

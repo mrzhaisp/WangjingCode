@@ -19,7 +19,7 @@ class TESTLOG(unittest.TestCase):
 
     def test003(self):
         # self.assertRegexpMatches(u'0001808156555437', r"^000\d{13}$")
-        self.assertRegexpMatches(u'0001808156555437', "^.{15}$")
+        self.assertRegexpMatches(u'0001808186585905', r"^000\d{13}$")
         print('--------****************-----------')
 
 

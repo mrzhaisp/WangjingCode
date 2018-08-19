@@ -15,15 +15,30 @@ class getPoordernumber(unittest.TestCase):
         self.b.p.closeBrowser()
 
     def test001(self):
-        self.assertRegexpMatches(self.b.getPoorder(
+        u"""是否000开头"""
+        self.assertIn(
+
+                r.readxml("poorder", "epxect"),
+
+                self.b.getPoorder(
                 #得到poorDerNumBer
                 r.readxml("poorder","username"),
-                r.readxml("poorder","password")) ,
-
-                #得到正则表达式子
-                r.readxml("poorder","epxect")
+                r.readxml("poorder","password"))
 
         )
+
+        # self.assertRegexpMatches(
+        #     # 得到正则表达式子
+        #         r.readxml("poorder", "epxect"),
+        #
+        #         self.b.getPoorder(
+        #         #得到poorDerNumBer
+        #         r.readxml("poorder","username"),
+        #         r.readxml("poorder","password"))
+        #
+        #
+        #
+        # )
 if __name__=="__main__":
     unittest.main()
 

@@ -20,7 +20,8 @@
     <poorder>
         <username>tdr</username>
         <password>Cmcc@121122</password>
-        <epxect>r"^000\d{13}$"</epxect>
+        <!--<epxect>r"^000\d{13}$"</epxect>-->
+        <epxect>000</epxect>
     </poorder>
 
 
