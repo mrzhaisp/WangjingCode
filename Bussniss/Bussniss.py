@@ -293,7 +293,7 @@ class Bussniss():
         poorDerNumBer = poorderInfo1[-1]
         tag = 'ocdzykc'
         creaTeDate = time.strftime("%Y-%m-%d %H:%M:%S")
-        with open('../DataShare/zykc-ordernumbs.txt','r') as f:
+        with open('../DataShare/zykc-ordernumbs.txt','w') as f:
             f.write(poorDerNumBer + '    ')
             f.write(creaTeDate + '    ')
             f.write(tag + '\n')

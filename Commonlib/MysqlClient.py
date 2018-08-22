@@ -19,8 +19,11 @@ class MysqlClient():
                 poorDerNumBer = po
                 tag = ocd
             # count = cs1.execute("insert into poorders (poordernumber,createdate) VALUES ("+poorDerNumBer+","+creaTeDate+")")
-                value = [poorDerNumBer,creaTeDate,tag]
-            count = cs1.execute("insert into poorders (poordernumber ,createdate,tag) VALUES (%s ,%s,%s)",value)
+            #     value = [poorDerNumBer,creaTeDate,tag]
+            # count = cs1.execute("insert into poorders (poordernumber ,createdate,tag) VALUES (%s ,%s,%s)",value)
+            sql = """
+            insert into poorders (poordernumber ,createdate,tag) VALUES ('%s','%s','%s')"""
+            count = cs1.execute(sql %(poordernumber ,createdate,tag))
             print(count)
             conn.commit()
         except Exception,e:
