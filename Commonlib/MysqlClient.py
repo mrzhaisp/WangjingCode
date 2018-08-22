@@ -9,9 +9,18 @@ class MysqlClient():
             conn = connect(host='127.0.0.1', port=3306, db='poorderinfo', user='root', passwd='mysql', charset='utf8')
             #创建游标
             cs1 = conn.cursor()
+            f = open("../DataShare/zykc-ordernumbs.txt").readlines()
+            for line in f:
+                list1 = line.replace('    ', ',')
+                po = list1[0:16]
+                tim = list1[17:36]
+                ocd = list1[37:45]
+                creaTeDate = tim
+                poorDerNumBer = po
+                tag = ocd
             # count = cs1.execute("insert into poorders (poordernumber,createdate) VALUES ("+poorDerNumBer+","+creaTeDate+")")
-            value = [poorDerNumBer,creaTeDate]
-            count = cs1.execute("insert into poorders (poordernumber ,createdate) VALUES (%s ,%s)",value)
+                value = [poorDerNumBer,creaTeDate,tag]
+            count = cs1.execute("insert into poorders (poordernumber ,createdate,tag) VALUES (%s ,%s,%s)",value)
             print(count)
             conn.commit()
         except Exception,e:
@@ -42,13 +51,23 @@ class MysqlClient():
 
 
 # if __name__=='__main__':
-#     creaTeDate = time.strftime("%Y-%m-%d %H:%M:%S") + '--ocdzykc'
-#     poorDerNumBer = "000808804832432"
-#     add = MysqlClient()
-#     nuMs = [poorDerNumBer,creaTeDate]
-#     add.dateAdd(*nuMs)
+    # f = open("../DataShare/zykc-ordernumbs.txt").readlines()
+    # print(f)
+    # for line in f:
+        # print(line)
+        # list1 = line.replace('    ',',')
+        # print(list1)
+        # po = list1[0:16]
+        # print(po)
+        # tim = list1[17:36]
+        # print(tim)
+        # ocd = list1[37:45]
+        # print(ocd)
+    # creaTeDate = tim
+    # poorDerNumBer = po
+    # tag = ocd
+    # add = MysqlClient()
+    # nuMs = [poorDerNumBer,creaTeDate,tag]
+    # add.dateAdd(*nuMs)
 
 
-
-        # se = MysqlClient()
-    # se.dateSelec()
