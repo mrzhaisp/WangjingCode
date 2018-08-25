@@ -297,23 +297,13 @@ class Bussniss():
             f.write(poorDerNumBer + '    ')
             f.write(creaTeDate + '    ')
             f.write(tag + '\n')
-        # muMs = [].extend(poorDerNumBer,creaTeDate ,tag)
-        # nuMs = []
-        # nuMs.insert(0,poorDerNumBer)
-        # nuMs.insert(1,creaTeDate)
-        # nuMs.insert(2,tag)
-        # print(nuMs,'------------')
-        # self.m.dateAdd(nuMs)
-        # print("*"*30,poorDerNumBer)
         return poorDerNumBer
 
 
-# #
+
 # p = Bussniss()
 # p.getPoorder("tdr","Cmcc@121122")
 
-
-# 0001808156555437
 
 
 

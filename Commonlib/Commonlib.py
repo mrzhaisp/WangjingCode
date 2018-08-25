@@ -52,7 +52,7 @@ class Commonlib():
             t.sleep(1)
 
     def tryMoveLocation(self,value):
-        """循环去找关键字然后点击"""
+        """循环去找关键字然后"""
         for i in range(10):
             try:
                 target = self.dr.find_element("xpath",value)
@@ -141,6 +141,10 @@ class Commonlib():
     def getScreenShot(self,value):
         """截图"""
         self.dr.get_screenshot_as_file(value)
+
+    def alterAccept(self):
+        self.dr.switch_to_alert().accept()
+
 
     def Login(self,Myurl,username,password):
         self.dr.get(Myurl)

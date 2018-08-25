@@ -9,21 +9,19 @@ class MysqlClient():
             conn = connect(host='127.0.0.1', port=3306, db='poorderinfo', user='root', passwd='mysql', charset='utf8')
             #创建游标
             cs1 = conn.cursor()
+            #读取存入txt的单号和tag和创建时间
             f = open("../DataShare/zykc-ordernumbs.txt").readlines()
             for line in f:
                 list1 = line.replace('    ', ',')
                 po = list1[0:16]
                 tim = list1[17:36]
                 ocd = list1[37:45]
-                creaTeDate = tim
-                poorDerNumBer = po
-                tag = ocd
             # count = cs1.execute("insert into poorders (poordernumber,createdate) VALUES ("+poorDerNumBer+","+creaTeDate+")")
             #     value = [poorDerNumBer,creaTeDate,tag]
             # count = cs1.execute("insert into poorders (poordernumber ,createdate,tag) VALUES (%s ,%s,%s)",value)
             sql = """
             insert into poorders (poordernumber ,createdate,tag) VALUES ('%s','%s','%s')"""
-            count = cs1.execute(sql %(poordernumber ,createdate,tag))
+            count = cs1.execute(sql %(po ,tim,ocd))
             print(count)
             conn.commit()
         except Exception,e:

@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="44cf078a-65bd-4441-97e9-3df06eee895b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Bussniss/BussinessShenPi.py" afterPath="$PROJECT_DIR$/Bussniss/BussinessShenPi.py" />
       <change beforePath="$PROJECT_DIR$/Bussniss/Bussniss.py" afterPath="$PROJECT_DIR$/Bussniss/Bussniss.py" />
+      <change beforePath="$PROJECT_DIR$/Commonlib/Commonlib.py" afterPath="$PROJECT_DIR$/Commonlib/Commonlib.py" />
       <change beforePath="$PROJECT_DIR$/Commonlib/MysqlClient.py" afterPath="$PROJECT_DIR$/Commonlib/MysqlClient.py" />
       <change beforePath="$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt" afterPath="$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt" />
     </list>
@@ -35,7 +37,8 @@
     <SUITE FILE_PATH="coverage/WangjingCode$809809.coverage" NAME="809809 Coverage Results" MODIFIED="1534951495482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/WangjingCode$Bussniss__1_.coverage" NAME="Bussniss (1) Coverage Results" MODIFIED="1534515775407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bussniss" />
     <SUITE FILE_PATH="coverage/WangjingCode$121212.coverage" NAME="121212 Coverage Results" MODIFIED="1534678601141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/WangjingCode$BussinessShenPi.coverage" NAME="BussinessShenPi Coverage Results" MODIFIED="1534684535900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bussniss" />
+    <SUITE FILE_PATH="coverage/WangjingCode$BussinessShenPi.coverage" NAME="BussinessShenPi Coverage Results" MODIFIED="1535037296154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bussniss" />
+    <SUITE FILE_PATH="coverage/WangjingCode$get1212.coverage" NAME="get1212 Coverage Results" MODIFIED="1535037626908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/WangjingCode$shenpi.coverage" NAME="shenpi Coverage Results" MODIFIED="1534570951646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/WangjingCode$Unittests_for_rezhengze_TESTLOG.coverage" NAME="Unittests for rezhengze.TESTLOG Coverage Results" MODIFIED="1534571614557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCopy" />
     <SUITE FILE_PATH="coverage/WangjingCode$getpoor.coverage" NAME="getpoor Coverage Results" MODIFIED="1534570702035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
@@ -56,8 +59,8 @@
       <file leaf-file-name="Bussniss.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="296" column="33" lean-forward="false" selection-start-line="296" selection-start-column="20" selection-end-line="296" selection-end-column="33" />
+            <state relative-caret-position="6925">
+              <caret line="297" column="37" lean-forward="false" selection-start-line="297" selection-start-column="37" selection-end-line="297" selection-end-column="37" />
               <folding>
                 <element signature="e#33#74#0" expanded="true" />
                 <element signature="e#348#1131#0" expanded="false" />
@@ -70,13 +73,13 @@
       <file leaf-file-name="MysqlClient.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="150">
+              <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
               <folding>
-                <element signature="e#1275#1311#0" expanded="false" />
-                <element signature="e#1346#1949#0" expanded="false" />
-                <marker date="1534957398914" expanded="true" signature="882:953" ph="insert into poorders... " />
-                <marker date="1534957398914" expanded="true" signature="996:1072" ph="insert into poorders... " />
+                <element signature="e#1196#1232#0" expanded="false" />
+                <element signature="e#1267#1870#0" expanded="false" />
+                <marker date="1535202604056" expanded="true" signature="821:892" ph="insert into poorders... " />
+                <marker date="1535202604056" expanded="true" signature="935:1011" ph="insert into poorders... " />
               </folding>
             </state>
           </provider>
@@ -86,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,11 +98,21 @@
       <file leaf-file-name="BussinessShenPi.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bussniss/BussinessShenPi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="950">
+              <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
               <folding>
                 <element signature="e#33#74#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Commonlib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Commonlib/Commonlib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3575">
+              <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,8 +130,8 @@
       <file leaf-file-name="cgetPoorder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/cgetPoorder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="675">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#33#71#0" expanded="true" />
               </folding>
@@ -145,6 +158,8 @@
       <find>poorDerNumBer</find>
       <find>ocd</find>
       <find>poordernumber</find>
+      <find>target</find>
+      <find>im</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,11 +176,12 @@
         <option value="$PROJECT_DIR$/Commonlib/Readxml.py" />
         <option value="$PROJECT_DIR$/DataShare/wangjing.xml" />
         <option value="$PROJECT_DIR$/Test/dbaZhiweiShen.py" />
-        <option value="$PROJECT_DIR$/Bussniss/BussinessShenPi.py" />
         <option value="$PROJECT_DIR$/Test/cgetPoorder.py" />
         <option value="$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt" />
-        <option value="$PROJECT_DIR$/Commonlib/MysqlClient.py" />
         <option value="$PROJECT_DIR$/Bussniss/Bussniss.py" />
+        <option value="$PROJECT_DIR$/Commonlib/Commonlib.py" />
+        <option value="$PROJECT_DIR$/Bussniss/BussinessShenPi.py" />
+        <option value="$PROJECT_DIR$/Commonlib/MysqlClient.py" />
       </list>
     </option>
   </component>
@@ -175,9 +191,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="375" />
+    <option name="y" value="46" />
     <option name="width" value="1382" />
     <option name="height" value="651" />
   </component>
@@ -199,14 +215,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="WangjingCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="WangjingCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WangjingCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WangjingCode" type="462c0819:PsiDirectoryNode" />
+              <item name="Bussniss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WangjingCode" type="b2602c69:ProjectViewProjectNode" />
@@ -248,7 +269,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="132131231312" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="get1212" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -290,15 +311,16 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41993463" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20121029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17397882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -325,6 +347,106 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Commonlib/Commonlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3575">
+          <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/dbaZhiweiShen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/cgetPoorder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding>
+            <element signature="e#1196#1232#0" expanded="false" />
+            <element signature="e#1267#1870#0" expanded="false" />
+            <marker date="1535202604056" expanded="true" signature="821:892" ph="insert into poorders... " />
+            <marker date="1535202604056" expanded="true" signature="935:1011" ph="insert into poorders... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6900">
+          <caret line="296" column="33" lean-forward="false" selection-start-line="296" selection-start-column="20" selection-end-line="296" selection-end-column="33" />
+          <folding>
+            <element signature="e#33#74#0" expanded="true" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1132#1148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bussniss/BussinessShenPi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="e#33#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/dbaZhiweiShen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/cgetPoorder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="e#1196#1232#0" expanded="false" />
+            <element signature="e#1267#1870#0" expanded="false" />
+            <marker date="1535202604056" expanded="true" signature="821:892" ph="insert into poorders... " />
+            <marker date="1535202604056" expanded="true" signature="935:1011" ph="insert into poorders... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -378,10 +500,10 @@
         <state relative-caret-position="575">
           <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding>
-            <element signature="e#1275#1311#0" expanded="false" />
-            <element signature="e#1346#1949#0" expanded="false" />
-            <marker date="1534957398914" expanded="true" signature="882:953" ph="insert into poorders... " />
-            <marker date="1534957398914" expanded="true" signature="996:1072" ph="insert into poorders... " />
+            <element signature="e#1196#1232#0" expanded="false" />
+            <element signature="e#1267#1870#0" expanded="false" />
+            <marker date="1535202604056" expanded="true" signature="821:892" ph="insert into poorders... " />
+            <marker date="1535202604056" expanded="true" signature="935:1011" ph="insert into poorders... " />
           </folding>
         </state>
       </provider>
@@ -476,7 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="22" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -552,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="170" column="0" lean-forward="false" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -582,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -601,13 +719,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bussniss/BussinessShenPi.py">
+    <entry file="file://$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="e#33#74#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -619,28 +735,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt">
+    <entry file="file://$PROJECT_DIR$/Commonlib/Commonlib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="3575">
+          <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/cgetPoorder.py">
+    <entry file="file://$PROJECT_DIR$/Bussniss/BussinessShenPi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="950">
+          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
           <folding>
-            <element signature="e#33#71#0" expanded="true" />
+            <element signature="e#33#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="296" column="33" lean-forward="false" selection-start-line="296" selection-start-column="20" selection-end-line="296" selection-end-column="33" />
+        <state relative-caret-position="6925">
+          <caret line="297" column="37" lean-forward="false" selection-start-line="297" selection-start-column="37" selection-end-line="297" selection-end-column="37" />
           <folding>
             <element signature="e#33#74#0" expanded="true" />
             <element signature="e#348#1131#0" expanded="false" />
@@ -649,15 +765,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test/cgetPoorder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="150">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
           <folding>
-            <element signature="e#1275#1311#0" expanded="false" />
-            <element signature="e#1346#1949#0" expanded="false" />
-            <marker date="1534957398914" expanded="true" signature="882:953" ph="insert into poorders... " />
-            <marker date="1534957398914" expanded="true" signature="996:1072" ph="insert into poorders... " />
+            <element signature="e#1196#1232#0" expanded="false" />
+            <element signature="e#1267#1870#0" expanded="false" />
+            <marker date="1535202604056" expanded="true" signature="821:892" ph="insert into poorders... " />
+            <marker date="1535202604056" expanded="true" signature="935:1011" ph="insert into poorders... " />
           </folding>
         </state>
       </provider>
