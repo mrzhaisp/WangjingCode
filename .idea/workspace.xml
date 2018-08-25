@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44cf078a-65bd-4441-97e9-3df06eee895b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Bussniss/BussinessShenPi.py" afterPath="$PROJECT_DIR$/Bussniss/BussinessShenPi.py" />
+      <change beforePath="$PROJECT_DIR$/Bussniss/BussinessShenPi.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Bussniss/Bussniss.py" afterPath="$PROJECT_DIR$/Bussniss/Bussniss.py" />
-      <change beforePath="$PROJECT_DIR$/Commonlib/Commonlib.py" afterPath="$PROJECT_DIR$/Commonlib/Commonlib.py" />
-      <change beforePath="$PROJECT_DIR$/Commonlib/MysqlClient.py" afterPath="$PROJECT_DIR$/Commonlib/MysqlClient.py" />
-      <change beforePath="$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt" afterPath="$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,63 +52,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Bussniss.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Bussniss.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6925">
-              <caret line="297" column="37" lean-forward="false" selection-start-line="297" selection-start-column="37" selection-end-line="297" selection-end-column="37" />
+            <state relative-caret-position="182">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#33#74#0" expanded="true" />
                 <element signature="e#348#1131#0" expanded="false" />
                 <element signature="e#1132#1148#0" expanded="false" />
+                <element signature="e#1235#7429#0" expanded="false" />
+                <element signature="e#7535#14342#0" expanded="false" />
+                <element signature="e#14392#15849#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MysqlClient.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-              <folding>
-                <element signature="e#1196#1232#0" expanded="false" />
-                <element signature="e#1267#1870#0" expanded="false" />
-                <marker date="1535202604056" expanded="true" signature="821:892" ph="insert into poorders... " />
-                <marker date="1535202604056" expanded="true" signature="935:1011" ph="insert into poorders... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zykc-ordernumbs.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BussinessShenPi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Bussniss/BussinessShenPi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-              <folding>
-                <element signature="e#33#74#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Commonlib.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Commonlib/Commonlib.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3575">
-              <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -121,20 +73,8 @@
         <entry file="file://$PROJECT_DIR$/Test/dbaZhiweiShen.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cgetPoorder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/cgetPoorder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <element signature="e#33#71#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -178,10 +118,10 @@
         <option value="$PROJECT_DIR$/Test/dbaZhiweiShen.py" />
         <option value="$PROJECT_DIR$/Test/cgetPoorder.py" />
         <option value="$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt" />
-        <option value="$PROJECT_DIR$/Bussniss/Bussniss.py" />
         <option value="$PROJECT_DIR$/Commonlib/Commonlib.py" />
         <option value="$PROJECT_DIR$/Bussniss/BussinessShenPi.py" />
         <option value="$PROJECT_DIR$/Commonlib/MysqlClient.py" />
+        <option value="$PROJECT_DIR$/Bussniss/Bussniss.py" />
       </list>
     </option>
   </component>
@@ -191,7 +131,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="375" />
     <option name="y" value="46" />
     <option name="width" value="1382" />
@@ -311,7 +251,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -394,6 +334,9 @@
             <element signature="e#33#74#0" expanded="true" />
             <element signature="e#348#1131#0" expanded="false" />
             <element signature="e#1132#1148#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
+            <element signature="e#7535#14342#0" expanded="false" />
+            <element signature="e#14392#15849#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -410,9 +353,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="e#33#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -455,6 +396,9 @@
             <element signature="e#33#74#0" expanded="true" />
             <element signature="e#348#1131#0" expanded="false" />
             <element signature="e#1132#1148#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
+            <element signature="e#7535#14342#0" expanded="false" />
+            <element signature="e#14392#15849#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -471,9 +415,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="e#33#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -516,6 +458,9 @@
             <element signature="e#33#74#0" expanded="true" />
             <element signature="e#348#1131#0" expanded="false" />
             <element signature="e#1132#1148#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
+            <element signature="e#7535#14342#0" expanded="false" />
+            <element signature="e#14392#15849#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -532,9 +477,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="e#33#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -564,6 +507,9 @@
             <element signature="e#33#74#0" expanded="true" />
             <element signature="e#348#1131#0" expanded="false" />
             <element signature="e#1132#1148#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
+            <element signature="e#7535#14342#0" expanded="false" />
+            <element signature="e#14392#15849#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -598,6 +544,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="22" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -616,6 +563,9 @@
             <element signature="e#33#74#0" expanded="true" />
             <element signature="e#348#1131#0" expanded="false" />
             <element signature="e#1132#1148#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
+            <element signature="e#7535#14342#0" expanded="false" />
+            <element signature="e#14392#15849#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -663,6 +613,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -672,6 +623,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="170" column="0" lean-forward="false" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -701,6 +653,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -727,47 +680,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/dbaZhiweiShen.py">
+    <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="250">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#1196#1232#0" expanded="false" />
+            <element signature="e#1267#1870#0" expanded="false" />
+            <marker date="1535202604056" expanded="true" signature="821:892" ph="insert into poorders... " />
+            <marker date="1535202604056" expanded="true" signature="935:1011" ph="insert into poorders... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Commonlib/Commonlib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3575">
+        <state relative-caret-position="65">
           <caret line="145" column="42" lean-forward="false" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bussniss/BussinessShenPi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding>
-            <element signature="e#33#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6925">
-          <caret line="297" column="37" lean-forward="false" selection-start-line="297" selection-start-column="37" selection-end-line="297" selection-end-column="37" />
-          <folding>
-            <element signature="e#33#74#0" expanded="true" />
-            <element signature="e#348#1131#0" expanded="false" />
-            <element signature="e#1132#1148#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/cgetPoorder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
+        <state relative-caret-position="744">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#33#71#0" expanded="true" />
@@ -775,15 +711,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commonlib/MysqlClient.py">
+    <entry file="file://$PROJECT_DIR$/Test/dbaZhiweiShen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bussniss/BussinessShenPi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="37" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#1196#1232#0" expanded="false" />
-            <element signature="e#1267#1870#0" expanded="false" />
-            <marker date="1535202604056" expanded="true" signature="821:892" ph="insert into poorders... " />
-            <marker date="1535202604056" expanded="true" signature="935:1011" ph="insert into poorders... " />
+            <element signature="e#33#74#0" expanded="true" />
+            <element signature="e#348#1131#0" expanded="false" />
+            <element signature="e#1132#1148#0" expanded="false" />
+            <element signature="e#1235#7429#0" expanded="false" />
+            <element signature="e#7535#14342#0" expanded="false" />
+            <element signature="e#14392#15849#0" expanded="false" />
           </folding>
         </state>
       </provider>
