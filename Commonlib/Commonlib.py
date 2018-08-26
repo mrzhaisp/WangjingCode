@@ -63,14 +63,14 @@ class Commonlib():
 
     def tryFindToclick(self,value):
         """循环去找元素去点击"""
-        for i in range(10):
+        for i in range(20):
             try:
                 self.dr.find_element("xpath",value).click()
                 break
             except:pass
             t.sleep(1)
         else:
-            print(u"还没来得是输入值呢")
+            print(u"没有找到关键字点击不了")
 
     def moveTopDown(self):
         """控制滚动条"""
@@ -142,10 +142,10 @@ class Commonlib():
         """截图"""
         self.dr.get_screenshot_as_file(value)
 
-    def alterAccept(self):
-        self.dr.switch_to_alert().accept()
-
-
+    def dissMiss(self):
+        """处理弹框"""
+        # self.dr.switch_to_alert().accept()
+        self.dr.switch_to_alert().dismiss()
     def Login(self,Myurl,username,password):
         self.dr.get(Myurl)
         t.sleep(1)
