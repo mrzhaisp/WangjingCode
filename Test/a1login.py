@@ -1,8 +1,12 @@
 #coding=utf-8
 __author__ = 'zgd'
+import sys
+import os
+sys.path.append(os.getcwd())
 from Bussniss.Bussniss import Bussniss
 import unittest
 from Commonlib.Readxml import Readxml
+
 r = Readxml()
 
 class Login(unittest.TestCase):

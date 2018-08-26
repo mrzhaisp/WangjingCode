@@ -2,10 +2,11 @@
 __author__ = 'zgd'
 from Commonlib.Commonlib import Commonlib
 from Commonlib.MysqlClient import MysqlClient
-
+import sys
+import os
+sys.path.append(os.getcwd())
 import time
 import re
-import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 class Bussniss():

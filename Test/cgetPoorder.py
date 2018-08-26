@@ -1,5 +1,8 @@
 #coding=utf-8
 __author__ = 'zgd'
+import sys
+import os
+sys.path.append(os.getcwd())
 from Bussniss.Bussniss import Bussniss
 from Commonlib.Readxml import Readxml
 from Commonlib.MysqlClient import MysqlClient

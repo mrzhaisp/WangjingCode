@@ -3,7 +3,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 import time as t
-
+import sys
+import os
+sys.path.append(os.getcwd())
 class Commonlib():
     def __init__(self):
 
