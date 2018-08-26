@@ -161,8 +161,6 @@ class Bussniss():
         # print(gmxl)
         return gmxl
 
-# p = Bussniss()
-# p.getPooder("tdr","Cmcc@121122")
     def getPoorder(self,username,password):
         u'''poordernumber'''
         # self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
@@ -300,18 +298,9 @@ class Bussniss():
             f.write(tag + '\n')
         return poorDerNumBer
 
-    def buLuShuxing(self,username,password):
-        self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
-        self.p.waite(1)
-        self.p.clearKeys(".//*[@id='username']")
-        self.p.waite(1)
-        self.p.inputKeys(".//*[@id='username']", username)
-        self.p.waite(1)
-        self.p.clearKeys(".//*[@id='password']")
-        self.p.waite(1)
-        self.p.inputKeys(".//*[@id='password']", password)
-        self.p.waite(1)
-        self.p.activeEvent(u"//*[contains(text(),'忘记密码')]/preceding-sibling::input[2]")
+    def buLuShuxing(self):
+        #第一次补录
+        self.p.Login("bazhiwei","Cmcc@121122")
         self.p.tryTimesleep("iframe_ID_301")
         self.p.tryFindToclick(u".//*[contains(text(),'产品名称')]/ancestor::div[5]/following-sibling::div/descendant::tbody/descendant::td[3]/descendant::a")
         self.p.shiFangFrame()
@@ -327,26 +316,26 @@ class Bussniss():
         self.p.activeEvent(u".//*[contains(text(),'补录专线属性')]")
         self.p.activeEvent(".//*[@id='nextNode-btnEl']")
         self.p.activeEvent(".//*[text()='Yes']/parent::button")
-        self.p.dissMiss()
+        print(u"第一次补录完成 关闭页面")
         self.p.waite(2)
-        self.p.shiFangFrame()
-        self.p.tryTimesleep("iframe_ID_301")
+        print(u"刷新页面")
+        self.p.reFresh()
+        self.p.waite(3)
+        #调度员第二次补录
+
+        self.p.tryFindIframe("iframe_ID_301")
         self.p.tryFindToclick(u".//*[contains(text(),'产品名称')]/ancestor::div[5]/following-sibling::div/descendant::tbody/descendant::td[3]/descendant::a")
         self.p.shiFangFrame()
         self.p.tryFindIframe("iframe_ID_waitWork")
         self.p.impLicitly(30)
         self.p.tryMoveLocation(u".//*[contains(text(),'请审批')]")
         self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
-        self.p.activeEvent(u".//*[contains(text(),'补录专线属性')]")
-        self.p.activeEvent(u"contains(text(),'补录完成')")
+        self.p.activeEvent(u".//*[contains(text(),'补录完成')]")
         self.p.activeEvent(".//*[@id='nextNode-btnEl']")
         self.p.activeEvent(".//*[text()='Yes']/parent::button")
         self.p.dissMiss()
-        u"""第二次修改"""
-        u"""第三次修改"""
-        u"""第五次修改"""
-sh = Bussniss()
-sh.buLuShuxing("bazhiwei","Cmcc@121122")
+# sh = Bussniss()
+# sh.buLuShuxing()
 
 
 

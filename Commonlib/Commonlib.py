@@ -10,8 +10,8 @@ class Commonlib():
     def __init__(self):
 
         """加载firefox配置文件"""
-        # self.dr = webdriver.Firefox(webdriver.FirefoxProfile("C:\Users\Administrator\AppData\Roaming\Mozilla\Firefox\Profiles\glw65f77.default"))
-        self.dr = webdriver.Firefox()
+        self.dr = webdriver.Firefox(webdriver.FirefoxProfile("C:\Users\Administrator\AppData\Roaming\Mozilla\Firefox\Profiles\glw65f77.default"))
+        # self.dr = webdriver.Firefox()
     def openBrowser(self,myurl):
         """打开浏览器"""
         self.dr.get(myurl)
@@ -146,22 +146,28 @@ class Commonlib():
         """截图"""
         self.dr.get_screenshot_as_file(value)
 
+    def reFresh(self):
+        """刷新页面"""
+        self.dr.refresh()
+
     def dissMiss(self):
         """处理弹框"""
-        # self.dr.switch_to_alert().accept()
-        self.dr.switch_to_alert().dismiss()
-    def Login(self,Myurl,username,password):
-        self.dr.get(Myurl)
+        self.dr.switch_to.alert().accept()
+        # self.dr.switch_to.alert().dismiss()
+
+
+    def Login(self,username,password):
+        self.dr.get("http://10.248.26.37/ESOP/Login/login.do")
         t.sleep(1)
         self.dr.maximize_window()
         t.sleep(1)
         self.dr.find_element("xpath",".//*[@id='username']").clear()
         t.sleep(1)
-        self.dr.find_element("xpath", ".//*[@id='username']").send_keys("tdr")
+        self.dr.find_element("xpath", ".//*[@id='username']").send_keys(username)
         t.sleep(2)
         self.dr.find_element("xpath",".//*[@id='password']").clear()
         t.sleep(1)
-        self.dr.find_element("xpath",".//*[@id='password']").send_keys("Cmcc@121122")
+        self.dr.find_element("xpath",".//*[@id='password']").send_keys(password)
         t.sleep(2)
         self.dr.find_element("xpath","//*[contains(text(),'忘记密码')]/preceding-sibling::input[2]").click()
 

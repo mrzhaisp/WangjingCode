@@ -12,7 +12,7 @@ r = Readxml()
 
 import re
 
-class getPoordernumber(unittest.TestCase):
+class getPoorder(unittest.TestCase):
     def setUp(self):
         self.b = Bussniss()
         self.m = MysqlClient()
