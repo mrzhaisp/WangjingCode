@@ -326,7 +326,7 @@ class Bussniss():
         self.p.activeEvent(u".//*[contains(text(),'补录专线属性')]")
         self.p.activeEvent(".//*[@id='nextNode-btnEl']")
         self.p.activeEvent(".//*[text()='Yes']/parent::button")
-        self.p.alterAccept()
+        self.p.dissMiss()
         self.p.waite(2)
         self.p.shiFangFrame()
         self.p.tryTimesleep("iframe_ID_301")
