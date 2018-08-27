@@ -138,7 +138,7 @@ class Commonlib():
     def switchOneWindows(self,value):
         """切换到浏览器窗口"""
         all_handers= self.dr.window_handles
-        # print(all_handers)
+        print(all_handers)
         self.dr.switch_to_window(self.dr.window_handles[value])
         # print(self.dr.title)
 
@@ -152,7 +152,8 @@ class Commonlib():
 
     def dissMiss(self):
         """处理弹框"""
-        self.dr.switch_to.alert().accept()
+        al = self.dr.switch_to_alert()
+        al.accept()
         # self.dr.switch_to.alert().dismiss()
 
 
