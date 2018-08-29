@@ -1,10 +1,12 @@
 #coding=utf-8
 __author__ = 'zgd'
-from Commonlib.Commonlib import Commonlib
-from Commonlib.MysqlClient import MysqlClient
 import sys
 import os
-sys.path.append(os.getcwd())
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+from Commonlib.Commonlib import Commonlib
+from Commonlib.MysqlClient import MysqlClient
 import time
 import re
 reload(sys)
@@ -320,29 +322,10 @@ class Bussniss():
         print(u"第一次补录完成 关闭页面")
         self.p.waite(2)
         self.p.dissMiss()
-        self.p.waite(2)
-        self.p.reFresh()
-        self.p.shiFangFrame()
-        self.p.waite(2)
-        self.p.tryFindIframe("iframe_ID_301")
-        print(u"刷新页面")
-        self.p.waite(2)
-        self.p.tryFindToclick(u".//*[contains(text(),'待办工作')]/ancestor::div[2]/following-sibling::div[1]/descendant::a[2]")
-        self.p.shiFangFrame()
-        self.p.tryFindIframe("iframe_ID_waitWork")
-        self.p.impLicitly(30)
-        self.p.tryMoveLocation(u".//*[contains(text(),'请审批')]")
-        self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
-        self.p.inputKeys(u".//*[contains(text(),'处理意见')]/parent::div/div[1]/textarea",u"已批准")
-        self.p.activeEvent(".//*[@id='nextArg-bodyEl']/div[2]/div[1]")
-        self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
-        self.p.activeEvent(u".//*[contains(text(),'补录完成')]")
-        self.p.activeEvent(".//*[@id='nextNode-btnEl']")
-        self.p.activeEvent(".//*[text()='Yes']/parent::button")
-        self.p.dissMiss()
+
         self.p.closeBrowser()
-sh = Bussniss()
-sh.buLuShuxing()
+# sh = Bussniss()
+# sh.buLuShuxing()
 
 
 

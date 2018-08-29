@@ -5,9 +5,9 @@ class Readxml():
     """定义读取xml文件"""
     def readxml(self,oneNode,twoNode):
     # def readxml(self):
-        # root = minidom.parse("../DateShare/wangjing.xml")
-        root = minidom.parse("E:\\WangjingCode\\DataShare\\wangjing.xml")
-
+    #     root = minidom.parse("../DateShare/wangjing.xml")
+    #     root = minidom.parse("E:\\WangjingCode\\DataShare\\wangjing.xml")
+        root = minidom.parse("D:\\WangjingCode\\DataShare\\wangjing.xml")
         #login这个组
         # firstnode = root.getElementsByTagName("poorder")[0]
         firstnode = root.getElementsByTagName(oneNode)[0]

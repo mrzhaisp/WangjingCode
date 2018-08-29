@@ -1,17 +1,19 @@
 #coding=utf-8
 # __author__ = 'zgd'
+import sys
+import os
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 import time as t
-import sys
-import os
-sys.path.append(os.getcwd())
 class Commonlib():
     def __init__(self):
 
         """加载firefox配置文件"""
-        self.dr = webdriver.Firefox(webdriver.FirefoxProfile("C:\Users\Administrator\AppData\Roaming\Mozilla\Firefox\Profiles\glw65f77.default"))
-        # self.dr = webdriver.Firefox()
+        # self.dr = webdriver.Firefox(webdriver.FirefoxProfile("C:\Users\Administrator\AppData\Roaming\Mozilla\Firefox\Profiles\glw65f77.default"))
+        self.dr = webdriver.Firefox()
     def openBrowser(self,myurl):
         """打开浏览器"""
         self.dr.get(myurl)
