@@ -7,6 +7,7 @@ rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 from Commonlib.Commonlib import Commonlib
 from Commonlib.MysqlClient import MysqlClient
+from selenium.common.exceptions import NoAlertPresentException
 import time
 import re
 reload(sys)
@@ -314,18 +315,23 @@ class Bussniss():
         self.p.inputKeys(u".//*[contains(text(),'处理意见')]/parent::div/div[1]/textarea",u"已批准")
         self.p.activeEvent(".//*[@id='nextArg-bodyEl']/div[2]/div[1]")
         self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
-        gttm = self.p.getText(u".//*[contains(text(),'补录专线属性')]")
-        print(gttm)
-        self.p.activeEvent(u".//*[contains(text(),'补录专线属性')]")
+        self.p.waite(2)
+        # gttm = self.p.getText(u".//*[contains(text(),'补录专线属性')]")
+        try:
+            self.p.activeEvent(u".//*[contains(text(),'补录专线属性')]")
+        except:
+            self.p.activeEvent(u".//*[contains(text(),'补录完成')]")
+        self.p.waite(2)
         self.p.activeEvent(".//*[@id='nextNode-btnEl']")
         self.p.activeEvent(".//*[text()='Yes']/parent::button")
-        print(u"第一次补录完成 关闭页面")
-        self.p.waite(2)
-        self.p.dissMiss()
+        try:
+            self.p.dissMiss()
+        except NoAlertPresentException as msg:
+            print(u"关闭弹窗异常 %s" %msg)
 
-        self.p.closeBrowser()
-# sh = Bussniss()
-# sh.buLuShuxing()
+        # self.p.closeBrowser()
+sh = Bussniss()
+sh.buLuShuxing()
 
 
 

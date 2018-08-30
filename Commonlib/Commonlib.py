@@ -154,8 +154,8 @@ class Commonlib():
 
     def dissMiss(self):
         """处理弹框"""
-        al = self.dr.switch_to_alert()
-        al.accept()
+        self.dr.switch_to.alert().accept()
+
         # self.dr.switch_to.alert().dismiss()
 
 
