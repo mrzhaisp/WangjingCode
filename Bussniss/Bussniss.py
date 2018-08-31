@@ -303,6 +303,7 @@ class Bussniss():
 
     def buLuShuxing(self):
         #第一次补录
+        print(u"补录属性")
         self.p.Login("bazhiwei","Cmcc@121122")
         self.p.tryTimesleep("iframe_ID_301")
         self.p.waite(2)
@@ -321,23 +322,30 @@ class Bussniss():
             self.p.activeEvent(u".//*[contains(text(),'补录专线属性')]")
             self.p.waite(1)
             buluText = self.p.getText(u".//*[contains(text(),'补录专线属性')]")
-            print(buluText)
+            # print(buluText)
+            self.p.waite(2)
+            self.p.activeEvent(".//*[@id='nextNode-btnEl']")
+            self.p.activeEvent(".//*[text()='Yes']/parent::button")
+            try:
+                self.p.dissMissAlter()
+            except NoAlertPresentException as msg:
+                print(u"关闭弹窗异常 %s" % msg)
+
         except:
             self.p.activeEvent(u".//*[contains(text(),'补录完成')]")
             buluText = self.p.getText(".//*[contains(text(),'补录完成')]")
-            print(buluText)
-        self.p.waite(2)
-        self.p.activeEvent(".//*[@id='nextNode-btnEl']")
-        self.p.activeEvent(".//*[text()='Yes']/parent::button")
-        try:
-            self.p.dissMissAlter()
-        except NoAlertPresentException as msg:
-            print(u"关闭弹窗异常 %s" %msg)
-        self.p.waite(2)
-        self.p.quitBrowser()
-        return buluText
-# sh = Bussniss()
-# sh.buLuShuxing()
+            self.p.waite(2)
+            self.p.activeEvent(".//*[@id='nextNode-btnEl']")
+            self.p.activeEvent(".//*[text()='Yes']/parent::button")
+            try:
+                self.p.dissMissAlter()
+            except NoAlertPresentException as msg:
+                print(u"关闭弹窗异常 %s" %msg)
+            self.p.waite(2)
+            self.p.quitBrowser()
+
+sh = Bussniss()
+sh.buLuShuxing()
 
 
 
