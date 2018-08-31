@@ -20,8 +20,13 @@ class Commonlib():
         self.dr.maximize_window()
 
     def closeBrowser(self):
-        """关闭浏览器"""
+        """关闭当前聚焦点所在的浏览器"""
         self.dr.close()
+
+    def quitBrowser(self):
+        """关闭所有窗口，安全关闭session"""
+        self.dr.quit()
+
 
     def localElement(self,value):
         """找到元素不做操作"""
@@ -152,12 +157,13 @@ class Commonlib():
         """刷新页面"""
         self.dr.refresh()
 
-    def dissMiss(self):
+    def dissMissAlter(self):
         """处理弹框"""
-        self.dr.switch_to.alert().accept()
-
+        alsk = self.dr.switch_to_alert()
+        alsk.accept()
         # self.dr.switch_to.alert().dismiss()
-
+    def promptAlter(self):
+        Alterprompt = self.dr.switchTo().alter
 
     def Login(self,username,password):
         self.dr.get("http://10.248.26.37/ESOP/Login/login.do")

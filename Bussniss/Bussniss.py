@@ -319,17 +319,23 @@ class Bussniss():
         # gttm = self.p.getText(u".//*[contains(text(),'补录专线属性')]")
         try:
             self.p.activeEvent(u".//*[contains(text(),'补录专线属性')]")
+            self.p.waite(1)
+            buluText = self.p.getText(u".//*[contains(text(),'补录专线属性')]")
+            print(buluText)
         except:
             self.p.activeEvent(u".//*[contains(text(),'补录完成')]")
+            buluText = self.p.getText(".//*[contains(text(),'补录完成')]")
+            print(buluText)
         self.p.waite(2)
         self.p.activeEvent(".//*[@id='nextNode-btnEl']")
         self.p.activeEvent(".//*[text()='Yes']/parent::button")
         try:
-            self.p.dissMiss()
+            self.p.dissMissAlter()
         except NoAlertPresentException as msg:
             print(u"关闭弹窗异常 %s" %msg)
-
-        # self.p.closeBrowser()
+        self.p.waite(2)
+        self.p.quitBrowser()
+        return buluText
 sh = Bussniss()
 sh.buLuShuxing()
 
