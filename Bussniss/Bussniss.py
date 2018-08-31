@@ -326,10 +326,10 @@ class Bussniss():
             self.p.waite(2)
             self.p.activeEvent(".//*[@id='nextNode-btnEl']")
             self.p.activeEvent(".//*[text()='Yes']/parent::button")
-            try:
-                self.p.dissMissAlter()
-            except NoAlertPresentException as msg:
-                print(u"关闭弹窗异常 %s" % msg)
+            self.p.waite(2)
+            self.p.dissMissAlter()
+            # except NoAlertPresentException as msg:
+            #     print(u"关闭弹窗异常 %s" % msg)
 
         except:
             self.p.activeEvent(u".//*[contains(text(),'补录完成')]")
@@ -344,9 +344,9 @@ class Bussniss():
             self.p.waite(2)
             self.p.quitBrowser()
 
-# sh = Bussniss()
-# sh.buLuShuxing()
-#111
+sh = Bussniss()
+sh.buLuShuxing()
+
 
 
 
