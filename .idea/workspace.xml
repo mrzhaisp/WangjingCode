@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="44cf078a-65bd-4441-97e9-3df06eee895b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Bussniss/Bussniss.py" afterPath="$PROJECT_DIR$/Bussniss/Bussniss.py" />
-      <change beforePath="$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt" afterPath="$PROJECT_DIR$/DataShare/zykc-ordernumbs.txt" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,8 +85,8 @@
       <file leaf-file-name="Bussniss.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="331" column="41" lean-forward="false" selection-start-line="331" selection-start-column="41" selection-end-line="331" selection-end-column="41" />
+            <state relative-caret-position="296">
+              <caret line="346" column="17" lean-forward="true" selection-start-line="346" selection-start-column="17" selection-end-line="349" selection-end-column="0" />
               <folding>
                 <element signature="e#33#43#0" expanded="true" />
                 <element signature="e#536#1319#0" expanded="false" />
@@ -1035,8 +1034,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Bussniss/Bussniss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="331" column="41" lean-forward="false" selection-start-line="331" selection-start-column="41" selection-end-line="331" selection-end-column="41" />
+        <state relative-caret-position="296">
+          <caret line="346" column="17" lean-forward="true" selection-start-line="346" selection-start-column="17" selection-end-line="349" selection-end-column="0" />
           <folding>
             <element signature="e#33#43#0" expanded="true" />
             <element signature="e#536#1319#0" expanded="false" />

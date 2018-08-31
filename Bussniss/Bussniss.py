@@ -344,9 +344,9 @@ class Bussniss():
             self.p.waite(2)
             self.p.quitBrowser()
 
-sh = Bussniss()
-sh.buLuShuxing()
-
+# sh = Bussniss()
+# sh.buLuShuxing()
+#
 
 
 
