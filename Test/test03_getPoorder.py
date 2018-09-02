@@ -2,9 +2,6 @@
 __author__ = 'zgd'
 import sys
 import os
-sys.path.append('D:\\WangjingCode\\Commonlib')
-sys.path.append('D:\\WangjingCode\\Bussniss')
-
 from Bussniss.Bussniss import Bussniss
 from Commonlib.Readxml import Readxml
 from Commonlib.MysqlClient import MysqlClient

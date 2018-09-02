@@ -1,6 +1,8 @@
 #coding=utf-8
 __author__ = 'zgd'
 import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 import os
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
@@ -10,8 +12,7 @@ from Commonlib.MysqlClient import MysqlClient
 from selenium.common.exceptions import NoAlertPresentException
 import time
 import re
-reload(sys)
-sys.setdefaultencoding('utf-8')
+
 class Bussniss():
     def __init__(self):
         self.p = Commonlib()
@@ -31,6 +32,7 @@ class Bussniss():
         self.p.waite(1)
         self.p.activeEvent(u"//*[contains(text(),'忘记密码')]/preceding-sibling::input[2]")
         gml = self.p.tryText(u".//span[text()='客户服务']").encode("utf-8")
+        print(gml)
         return gml
         # if  gml == u'客户服务':
         #     print(u"成功")
@@ -160,7 +162,7 @@ class Bussniss():
         self.p.activeEvent( ".//*[@id='submitButton-btnEl']")
         self.p.waite(2)
         self.p.activeEvent(u".//*[contains(text(),'送下一环节')]/following-sibling::div[1]/div[2]/div")
-        gmxl = self.p.tryText(u".//*[contains(text(),'送专线勘察和调度管')]").encode("utf-8")
+        gmxl = self.p.tryText(u".//*[contains(text(),'送专线勘察和调度管')]").decode('unicode_escape')
         # print(gmxl)
         return gmxl
 
@@ -301,9 +303,8 @@ class Bussniss():
             f.write(tag + '\n')
         return poorDerNumBer
 
-    def buLuShuxing(self):
-        #第一次补录
-        print(u"补录属性")
+    def buLuShuxingFirst(self):
+        """第一次补录"""
         self.p.Login("bazhiwei","Cmcc@121122")
         self.p.tryTimesleep("iframe_ID_301")
         self.p.waite(2)
@@ -315,61 +316,56 @@ class Bussniss():
         self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
         self.p.inputKeys(u".//*[contains(text(),'处理意见')]/parent::div/div[1]/textarea",u"已批准")
         self.p.activeEvent(".//*[@id='nextArg-bodyEl']/div[2]/div[1]")
+        self.p.waite(1)
+        buluTextFirst = self.p.tryText(u".//li[contains(text(),'补录专线属性')]").encode("utf-8")
+        # print(buluTextFirst)
         self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
         self.p.waite(2)
         try:
             self.p.activeEvent(u".//*[contains(text(),'补录专线属性')]")
-            self.p.waite(1)
-            buluText = self.p.getText(u".//*[contains(text(),'补录专线属性')]")
-            # print(buluText)
             self.p.waite(2)
             self.p.activeEvent(".//*[@id='nextNode-btnEl']")
             self.p.activeEvent(".//*[text()='Yes']/parent::button")
             self.p.waite(2)
             self.p.dissMissAlter()
-            self.p.waite(2)
-            self.p.tryTimesleep("iframe_ID_301")
-            self.p.waite(2)
-            self.p.tryFindToclick(
-                u".//*[contains(text(),'待办工作')]/ancestor::div[2]/following-sibling::div[1]/descendant::a[2]")
-            self.p.shiFangFrame()
-            self.p.tryFindIframe("iframe_ID_waitWork")
-            self.p.impLicitly(30)
-            self.p.tryMoveLocation(u".//*[contains(text(),'请审批')]")
-            self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
-            self.p.inputKeys(u".//*[contains(text(),'处理意见')]/parent::div/div[1]/textarea", u"已批准")
-            self.p.activeEvent(".//*[@id='nextArg-bodyEl']/div[2]/div[1]")
-            self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
-            self.p.activeEvent(u".//*[contains(text(),'补录完成')]")
-            buluText = self.p.getText(".//*[contains(text(),'补录完成')]")
-            self.p.waite(2)
-            self.p.activeEvent(".//*[@id='nextNode-btnEl']")
-            self.p.activeEvent(".//*[text()='Yes']/parent::button")
-            try:
-                self.p.dissMissAlter()
-            except NoAlertPresentException as msg:
-                print(u"关闭弹窗异常 %s" % msg)
-            self.p.waite(2)
-            self.p.quitBrowser()
-            # except NoAlertPresentException as msg:
-            #     print(u"关闭弹窗异常 %s" % msg)
+        except NoAlertPresentException as msg:
+            print(u"关闭弹窗异常 %s" %msg)
+        self.p.waite(2)
+        self.p.quitBrowser()
+        return buluTextFirst
 
-        except:
-            self.p.activeEvent(u".//*[contains(text(),'补录完成')]")
-            buluText = self.p.getText(".//*[contains(text(),'补录完成')]")
-            self.p.waite(2)
-            self.p.activeEvent(".//*[@id='nextNode-btnEl']")
-            self.p.activeEvent(".//*[text()='Yes']/parent::button")
-            try:
-                self.p.dissMissAlter()
-            except NoAlertPresentException as msg:
-                print(u"关闭弹窗异常 %s" %msg)
-            self.p.waite(2)
-            self.p.quitBrowser()
+    def buLuShuxingSecond(self):
+        """第二次补录"""
+        self.p.Login("bazhiwei","Cmcc@121122")
+        self.p.tryTimesleep("iframe_ID_301")
+        self.p.waite(2)
+        self.p.tryFindToclick(u".//*[contains(text(),'待办工作')]/ancestor::div[2]/following-sibling::div[1]/descendant::a[2]")
+        self.p.shiFangFrame()
+        self.p.tryFindIframe("iframe_ID_waitWork")
+        self.p.impLicitly(30)
+        self.p.tryMoveLocation(u".//*[contains(text(),'请审批')]")
+        self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
+        self.p.inputKeys(u".//*[contains(text(),'处理意见')]/parent::div/div[1]/textarea",u"已批准")
+        self.p.activeEvent(".//*[@id='nextArg-bodyEl']/div[2]/div[1]")
+        buluTextsec = self.p.tryText(u".//li[contains(text(),'补录完成')]").encode("utf-8")
+        # print(buluTextsec)
+        self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
+        self.p.waite(2)
+        self.p.activeEvent(u".//*[contains(text(),'补录完成')]")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@id='nextNode-btnEl']")
+        self.p.activeEvent(".//*[text()='Yes']/parent::button")
+        try:
+            self.p.dissMissAlter()
+        except NoAlertPresentException as msg:
+            print(u"关闭弹窗异常 %s" %msg)
+        self.p.waite(2)
+        self.p.quitBrowser()
+        return buluTextsec
 
 # sh = Bussniss()
-# sh.buLuShuxing()
-#
+# # sh.buLuShuxingFirst()
+# sh.buLuShuxingSecond()
 
 
 
