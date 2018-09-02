@@ -18,11 +18,12 @@ class Tsuit(unittest.TestCase):
         c.createReporter(discover)
         #调用邮箱类 把该路径下的测试报告通过邮箱发送
         s.sendEmail("../Reporter/37test.html")
-        for i in range(0, 110, 10):
-            sys.stdout.write("▓▓▓" + " %" + str(i))
+        for i in range(100):
+            k = i + 1
+            str = '▒' * i + '' * (100 - k)
+            sys.stdout.write('\r' + str + '[%s%%]' % (i + 1))
             sys.stdout.flush()
-            time.sleep(0.5)
-            print
+            time.sleep(0.05)
         print(u"邮件传输%100")
     #原因是因为sub_class里缺少runTest方法，不加上该方法，上边的tetsT会报错，直接在Tsuit的类中增加
     def runTest(self):
