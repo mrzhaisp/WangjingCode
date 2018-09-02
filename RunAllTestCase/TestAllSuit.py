@@ -1,5 +1,6 @@
 #coding=utf-8
 __author__ = 'zgd'
+import sys,time
 import unittest
 from Commonlib.CreateReporter import CreateReporter
 c = CreateReporter()
@@ -17,7 +18,12 @@ class Tsuit(unittest.TestCase):
         c.createReporter(discover)
         #调用邮箱类 把该路径下的测试报告通过邮箱发送
         s.sendEmail("../Reporter/37test.html")
-        print(u"发送邮件完毕")
+        for i in range(0, 110, 10):
+            sys.stdout.write("▓▓▓" + " %" + str(i))
+            sys.stdout.flush()
+            time.sleep(0.5)
+            print
+        print(u"邮件传输%100")
     #原因是因为sub_class里缺少runTest方法，不加上该方法，上边的tetsT会报错，直接在Tsuit的类中增加
     def runTest(self):
         pass
