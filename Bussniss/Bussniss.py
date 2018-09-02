@@ -317,7 +317,6 @@ class Bussniss():
         self.p.activeEvent(".//*[@id='nextArg-bodyEl']/div[2]/div[1]")
         self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
         self.p.waite(2)
-        # gttm = self.p.getText(u".//*[contains(text(),'补录专线属性')]")
         try:
             self.p.activeEvent(u".//*[contains(text(),'补录专线属性')]")
             self.p.waite(1)
@@ -328,6 +327,30 @@ class Bussniss():
             self.p.activeEvent(".//*[text()='Yes']/parent::button")
             self.p.waite(2)
             self.p.dissMissAlter()
+            self.p.waite(2)
+            self.p.tryTimesleep("iframe_ID_301")
+            self.p.waite(2)
+            self.p.tryFindToclick(
+                u".//*[contains(text(),'待办工作')]/ancestor::div[2]/following-sibling::div[1]/descendant::a[2]")
+            self.p.shiFangFrame()
+            self.p.tryFindIframe("iframe_ID_waitWork")
+            self.p.impLicitly(30)
+            self.p.tryMoveLocation(u".//*[contains(text(),'请审批')]")
+            self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
+            self.p.inputKeys(u".//*[contains(text(),'处理意见')]/parent::div/div[1]/textarea", u"已批准")
+            self.p.activeEvent(".//*[@id='nextArg-bodyEl']/div[2]/div[1]")
+            self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
+            self.p.activeEvent(u".//*[contains(text(),'补录完成')]")
+            buluText = self.p.getText(".//*[contains(text(),'补录完成')]")
+            self.p.waite(2)
+            self.p.activeEvent(".//*[@id='nextNode-btnEl']")
+            self.p.activeEvent(".//*[text()='Yes']/parent::button")
+            try:
+                self.p.dissMissAlter()
+            except NoAlertPresentException as msg:
+                print(u"关闭弹窗异常 %s" % msg)
+            self.p.waite(2)
+            self.p.quitBrowser()
             # except NoAlertPresentException as msg:
             #     print(u"关闭弹窗异常 %s" % msg)
 
@@ -344,9 +367,9 @@ class Bussniss():
             self.p.waite(2)
             self.p.quitBrowser()
 
-sh = Bussniss()
-sh.buLuShuxing()
-
+# sh = Bussniss()
+# sh.buLuShuxing()
+#
 
 
 

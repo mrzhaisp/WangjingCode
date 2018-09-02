@@ -8,13 +8,18 @@ class tetsAlter():
     def altertable(self):
         self.b.openBrowser("C:\\Users\\Administrator\\Desktop\\alter.html")
         # self.b.activeEvent(".//*[@id='alert']")
-        self.b.activeEvent(".//*[@id='confirm']")
+        self.b.activeEvent("html/body/div[1]/input[1]")
         # self.b.activeEvent(".//*[@id='prompt']")
 
         self.b.waite(2)
         self.b.dissMissAlter()
         print(u'准备关闭浏览器')
-        self.b.quitBrowser()
+        self.b.waite(2)
+        self.b.activeEvent("html/body/div[1]/input[2]")
+        self.b.waite(2)
+        self.b.dissMissAlter()
+
+        # self.b.quitBrowser()
 mm = tetsAlter()
 mm.altertable()
 
