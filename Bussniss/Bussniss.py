@@ -29,8 +29,9 @@ class Bussniss():
         self.p.clearKeys(".//*[@id='password']")
         self.p.waite(1)
         self.p.inputKeys(".//*[@id='password']",password)
-        self.p.waite(1)
+        self.p.waite(2)
         self.p.activeEvent(u"//*[contains(text(),'忘记密码')]/preceding-sibling::input[2]")
+        self.p.waite(2)
         gml = self.p.tryText(u".//span[text()='客户服务']").encode("utf-8")
         print(gml)
         return gml
@@ -162,7 +163,8 @@ class Bussniss():
         self.p.activeEvent( ".//*[@id='submitButton-btnEl']")
         self.p.waite(2)
         self.p.activeEvent(u".//*[contains(text(),'送下一环节')]/following-sibling::div[1]/div[2]/div")
-        gmxl = self.p.tryText(u".//*[contains(text(),'送专线勘察和调度管')]").decode('unicode_escape')
+        self.p.waite(2)
+        gmxl = self.p.tryText(u".//*[contains(text(),'送专线勘察和调度管')]").encode("utf-8")
         # print(gmxl)
         return gmxl
 
@@ -316,7 +318,7 @@ class Bussniss():
         self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
         self.p.inputKeys(u".//*[contains(text(),'处理意见')]/parent::div/div[1]/textarea",u"已批准")
         self.p.activeEvent(".//*[@id='nextArg-bodyEl']/div[2]/div[1]")
-        self.p.waite(1)
+        self.p.waite(2)
         buluTextFirst = self.p.tryText(u".//li[contains(text(),'补录专线属性')]").encode("utf-8")
         # print(buluTextFirst)
         self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
@@ -347,6 +349,7 @@ class Bussniss():
         self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
         self.p.inputKeys(u".//*[contains(text(),'处理意见')]/parent::div/div[1]/textarea",u"已批准")
         self.p.activeEvent(".//*[@id='nextArg-bodyEl']/div[2]/div[1]")
+        self.p.waite(2)
         buluTextsec = self.p.tryText(u".//li[contains(text(),'补录完成')]").encode("utf-8")
         # print(buluTextsec)
         self.p.tryMoveLocation(u".//*[contains(text(),'下一办理步骤')]")
