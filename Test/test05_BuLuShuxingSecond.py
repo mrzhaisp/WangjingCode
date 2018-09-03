@@ -17,7 +17,6 @@ class buLuShuXingSecond(unittest.TestCase):
             r.readxml("bulushuxingSecond","epxect")
 
         )
-
 if __name__=="__main__":
     unittest.main()
 
@@ -26,7 +25,7 @@ if __name__=="__main__":
 
 
 
-
+log
 
 
 

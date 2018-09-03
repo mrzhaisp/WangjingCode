@@ -12,7 +12,7 @@ class Tsuit(unittest.TestCase):
         #找到测试用例的文件路径
         case_dir = "../Test"
         #加载测试用例
-        discover = unittest.defaultTestLoader.discover(case_dir,pattern="rezhengze.py",top_level_dir=None)
+        discover = unittest.defaultTestLoader.discover(case_dir,pattern="test*.py",top_level_dir=None)
         # print(discover)
         #把测试执行的用例传给createReport,
         c.createReporter(discover)
