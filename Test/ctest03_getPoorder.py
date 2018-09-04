@@ -22,7 +22,7 @@ class getPoorder(unittest.TestCase):
         self.b.p.closeBrowser()
 
     def test001(self):
-        u"""是否000开头"""
+        u"""省级提单000开头"""
         self.assertIn(
 
                 r.readxml("poorder", "epxect"),

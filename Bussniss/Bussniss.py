@@ -367,20 +367,27 @@ class Bussniss():
         self.p.quitBrowser()
         return buluTextsec
 
-# sh = Bussniss()
-# # sh.buLuShuxingFirst()
-# sh.buLuShuxingSecond()
-
-
-# mk =Bussniss()
-# mk.pooderShenpi("tdr","Cmcc@121122")
-#
-#
-#
-
-
-
-
+    def kaiTongDan(self,username,password):
+        """省级提单人开通单"""
+        self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
+        self.p.waite(1)
+        self.p.clearKeys(".//*[@id='username']")
+        self.p.waite(1)
+        self.p.inputKeys(".//*[@id='username']",username)
+        self.p.waite(1)
+        self.p.clearKeys(".//*[@id='password']")
+        self.p.waite(1)
+        self.p.inputKeys(".//*[@id='password']",password)
+        self.p.waite(2)
+        self.p.activeEvent(u"//*[contains(text(),'忘记密码')]/preceding-sibling::input[2]")
+        self.p.waite(2)self.p.tryTimesleep("iframe_ID_201")
+        self.p.tryMoveLocation(u".//span[text()='超时工单提醒']")
+        self.p.waite(2)
+        self.p.activeEvent( u".//*[@id='menuDiv']/descendant::div[text()='网络资源勘查']")
+        self.p.waite(2)
+        self.p.shiFangFrame()
+mn = Bussniss()
+mn.kaiTongDan("tdr","Cmcc@121122")
 
 
 
