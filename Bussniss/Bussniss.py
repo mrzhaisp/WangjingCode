@@ -18,7 +18,7 @@ class Bussniss():
         self.p = Commonlib()
         self.m = MysqlClient()
     def login(self,username,password):
-        '''定义登陆函数'''
+        '''提单人登陆测试'''
         # self.p.Login("http://10.248.26.37/ESOP/Login/login.do","tdr","Cmcc@121122")
         # self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
         self.p.waite(1)
@@ -64,7 +64,7 @@ class Bussniss():
         self.p.waite(1)
         self.p.tryTimesleep("iframe_ID_20321")
         self.p.tryFindToclick(".//*[@id='btnCustomerSelect-btnEl']")
-        self.p.trySendKeys(".//*[@id='keyWord']/descendant::input", u"99回归")
+        self.p.trySendKeys(u".//*[@id='keyWord']/descendant::input", u"99回归")
         self.p.waite(1)
         self.p.activeEvent( u".//span[text()='查 询']/parent::button")
         self.p.waite(1)
@@ -86,23 +86,23 @@ class Bussniss():
         self.p.waite(1)
         self.p.activeEvent( ".//*[@id='vipGrid-body']/descendant::td[7]/div")
         self.p.waite(1)
-        self.p.inputKeys(".//*[@id='vipGrid-body']/div[4]/descendant::input", u"普通级")
+        self.p.inputKeys(u".//*[@id='vipGrid-body']/div[4]/descendant::input", u"普通级")
         self.p.waite(1)
-        self.p.activeEvent( ".//*[@id='vipGrid-body']/descendant::td[10]/div")
+        self.p.activeEvent(".//*[@id='vipGrid-body']/descendant::td[10]/div")
         self.p.waite(1)
-        self.p.inputKeys( ".//*[@id='vipGrid-body']/div[5]/descendant::input", u"北京")
+        self.p.inputKeys( u".//*[@id='vipGrid-body']/div[5]/descendant::input", u"北京")
         self.p.waite(1)
-        self.p.activeEvent( ".//*[@id='vipGrid-body']/descendant::td[11]/div")
+        self.p.activeEvent(".//*[@id='vipGrid-body']/descendant::td[11]/div")
         self.p.waite(1)
-        self.p.inputKeys( ".//*[@id='vipGrid-body']/div[6]/descendant::input", u"北京")
+        self.p.inputKeys( u".//*[@id='vipGrid-body']/div[6]/descendant::input", u"北京")
         self.p.waite(1)
         self.p.activeEvent( ".//*[@id='vipGrid-body']/descendant::td[12]/div")
         self.p.waite(1)
-        self.p.inputKeys( ".//*[@id='vipGrid-body']/div[7]/descendant::input", u"西城区")
+        self.p.inputKeys(u".//*[@id='vipGrid-body']/div[7]/descendant::input", u"西城区")
         self.p.waite(1)
         self.p.activeEvent( ".//*[@id='vipGrid-body']/descendant::td[13]/div")
         self.p.waite(1)
-        self.p.inputKeys( ".//*[@id='vipGrid-body']/div[8]/descendant::input", u"西城区西区")
+        self.p.inputKeys(u".//*[@id='vipGrid-body']/div[8]/descendant::input", u"西城区西区")
         self.p.waite(1)
         self.p.activeEvent( ".//*[@id='vipGrid-body']/descendant::td[14]/div")
         self.p.waite(2)
@@ -164,12 +164,12 @@ class Bussniss():
         self.p.waite(2)
         self.p.activeEvent(u".//*[contains(text(),'送下一环节')]/following-sibling::div[1]/div[2]/div")
         self.p.waite(2)
-        gmxl = self.p.tryText(u".//*[contains(text(),'送专线勘察和调度管')]").encode("utf-8")
+        gmxl = self.p.tryText(u".//*[contains(text(),'送专线勘察和调度管理员审批')]").encode("utf-8")
         # print(gmxl)
         return gmxl
 
     def getPoorder(self,username,password):
-        u'''poordernumber'''
+        u'''得到poordernumber'''
         # self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
         # self.p.waite(1)
         self.p.clearKeys(".//*[@id='username']")
