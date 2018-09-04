@@ -12,7 +12,7 @@ class Tsuit(unittest.TestCase):
         #找到测试用例的文件路径
         case_dir = "../Test"
         #加载测试用例
-        discover = unittest.defaultTestLoader.discover(case_dir,pattern="test*.py",top_level_dir=None)
+        discover = unittest.defaultTestLoader.discover(case_dir,pattern="*.py",top_level_dir=None)
         # print(discover)
         #把测试执行的用例传给createReport,
         c.createReporter(discover)
@@ -20,7 +20,7 @@ class Tsuit(unittest.TestCase):
         s.sendEmail("../Reporter/37test.html")
         for i in range(100):
             k = i + 1
-            str = '▒' * i + '' * (100 - k)
+            str = '/' * i + '' * (100 - k)
             sys.stdout.write('\r' + str + '[%s%%]' % (i + 1))
             sys.stdout.flush()
             time.sleep(0.05)
