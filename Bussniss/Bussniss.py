@@ -372,11 +372,11 @@ class Bussniss():
 # sh.buLuShuxingSecond()
 
 
-mk =Bussniss()
-mk.pooderShenpi("tdr","Cmcc@121122")
-
-
-
+# mk =Bussniss()
+# mk.pooderShenpi("tdr","Cmcc@121122")
+#
+#
+#
 
 
 

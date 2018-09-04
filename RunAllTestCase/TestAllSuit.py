@@ -24,7 +24,7 @@ class Tsuit(unittest.TestCase):
             sys.stdout.write('\r' + str + '[%s%%]' % (i + 1))
             sys.stdout.flush()
             time.sleep(0.05)
-        print(u"邮件传输%100")
+        print(u"Emal send----->%100")
     #原因是因为sub_class里缺少runTest方法，不加上该方法，上边的tetsT会报错，直接在Tsuit的类中增加
     def runTest(self):
         pass
