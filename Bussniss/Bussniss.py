@@ -162,7 +162,7 @@ class Bussniss():
         self.p.activeEvent( ".//*[@id='submitButton-btnEl']")
         self.p.waite(2)
         self.p.activeEvent(u".//*[contains(text(),'送下一环节')]/following-sibling::div[1]/div[2]/div")
-        gmxl = self.p.tryText(u".//*[contains(text(),'送专线勘察和调度管')]").decode('unicode_escape')
+        gmxl = self.p.tryText(u".//*[contains(text(),'送专线勘察和调度管理员审批')]").encode("utf-8")
         # print(gmxl)
         return gmxl
 
