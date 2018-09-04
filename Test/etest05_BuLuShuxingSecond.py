@@ -13,7 +13,8 @@ class buLuShuXingSecond(unittest.TestCase):
 
     def test001(self):
         """测试第二次次补录是否成功"""
-        self.assertEquals(self.b.buLuShuxingSecond(),
+        self.assertEquals(self.b.buLuShuxingSecond(r.readxml("bulushuxingSecond","username"),
+                                                   r.readxml("bulushuxingSecond","password")),
             r.readxml("bulushuxingSecond","epxect")
 
         )

@@ -17,7 +17,8 @@ class buLuShuXingOne(unittest.TestCase):
 
     def test001(self):
         """测试首次补录是否成功"""
-        self.assertEquals( self.b.buLuShuxingFirst( ),
+        self.assertEquals( self.b.buLuShuxingFirst(r.readxml("bulushuxingOne","username"),
+                                                   r.readxml("bulushuxingOne","password")),
             r.readxml("bulushuxingOne","epxect")
 
         )

@@ -24,11 +24,15 @@
 
     <!--首次补录属性-->
     <bulushuxingOne>
+        <username>bazhiwei</username>
+        <password>Cmcc@121122</password>
         <epxect>补录专线属性</epxect>
     </bulushuxingOne>
 
     <!--第二次确认补录-->
     <bulushuxingSecond>
+        <username>bazhiwei</username>
+        <password>Cmcc@121122</password>
         <epxect>补录完成</epxect>
     </bulushuxingSecond>
 </node>

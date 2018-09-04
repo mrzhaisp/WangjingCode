@@ -4,9 +4,6 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 import os
-curPath = os.path.abspath(os.path.dirname(__file__))
-rootPath = os.path.split(curPath)[0]
-sys.path.append(rootPath)
 from Commonlib.Commonlib import Commonlib
 from Commonlib.MysqlClient import MysqlClient
 from selenium.common.exceptions import NoAlertPresentException
@@ -19,42 +16,15 @@ class Bussniss():
         self.m = MysqlClient()
     def login(self,username,password):
         '''提单人登陆测试'''
-        # self.p.Login("http://10.248.26.37/ESOP/Login/login.do","tdr","Cmcc@121122")
-        # self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
-        self.p.waite(1)
-        self.p.clearKeys(".//*[@id='username']")
-        self.p.waite(1)
-        self.p.inputKeys(".//*[@id='username']",username)
-        self.p.waite(1)
-        self.p.clearKeys(".//*[@id='password']")
-        self.p.waite(1)
-        self.p.inputKeys(".//*[@id='password']",password)
-        self.p.waite(2)
-        self.p.activeEvent(u"//*[contains(text(),'忘记密码')]/preceding-sibling::input[2]")
+        self.p.Login(username,password)
         self.p.waite(2)
         gml = self.p.tryText(u".//span[text()='客户服务']").encode("utf-8")
         print(gml)
         return gml
-        # if  gml == u'客户服务':
-        #     print(u"成功")
-        # else:
-        #     print(u"失败")
-# p = Bussniss()
-# p.login("tdr","Cmcc@121122")
 
     def pooderShenpi(self,username,password):
         u"""验证审批人"""
-        self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
-        self.p.waite(1)
-        self.p.clearKeys(".//*[@id='username']")
-        self.p.waite(1)
-        self.p.inputKeys(".//*[@id='username']",username)
-        self.p.waite(1)
-        self.p.clearKeys(".//*[@id='password']")
-        self.p.waite(1)
-        self.p.inputKeys(".//*[@id='password']",password)
-        self.p.waite(1)
-        self.p.activeEvent(u"//*[contains(text(),'忘记密码')]/preceding-sibling::input[2]")
+        self.p.Login(username,password)
         self.p.tryTimesleep("iframe_ID_201")
         self.p.tryMoveLocation(u".//span[text()='超时工单提醒']")
         self.p.waite(2)
@@ -168,21 +138,12 @@ class Bussniss():
         # print(gmxl)
         return gmxl
 
-
     def getPoorder(self,username,password):
         u'''得到poordernumber'''
         # self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
-        # self.p.waite(1)
-        self.p.clearKeys(".//*[@id='username']")
-        self.p.waite(1)
-        self.p.inputKeys(".//*[@id='username']",username)
-        self.p.waite(1)
-        self.p.clearKeys(".//*[@id='password']")
-        self.p.waite(1)
-        self.p.inputKeys(".//*[@id='password']",password)
-        self.p.waite(1)
-        self.p.activeEvent(u"//*[contains(text(),'忘记密码')]/preceding-sibling::input[2]")
+        self.p.Login(username,password)
         self.p.tryTimesleep("iframe_ID_201")
+        self.p.waite(2)
         self.p.tryMoveLocation(u".//span[text()='超时工单提醒']")
         self.p.waite(2)
         self.p.activeEvent( u".//*[@id='menuDiv']/descendant::div[text()='网络资源勘查']")
@@ -306,9 +267,10 @@ class Bussniss():
             f.write(tag + '\n')
         return poorDerNumBer
 
-    def buLuShuxingFirst(self):
+    def buLuShuxingFirst(self,username,password):
         """第一次补录"""
-        self.p.Login("bazhiwei","Cmcc@121122")
+        self.p.Login(username,password)
+        self.p.waite(2)
         self.p.tryTimesleep("iframe_ID_301")
         self.p.waite(2)
         self.p.tryFindToclick(u".//*[contains(text(),'待办工作')]/ancestor::div[2]/following-sibling::div[1]/descendant::a[2]")
@@ -337,9 +299,10 @@ class Bussniss():
         self.p.quitBrowser()
         return buluTextFirst
 
-    def buLuShuxingSecond(self):
+    def buLuShuxingSecond(self,username,password):
         """第二次补录"""
-        self.p.Login("bazhiwei","Cmcc@121122")
+        self.p.Login(username,password)
+        self.p.waite(2)
         self.p.tryTimesleep("iframe_ID_301")
         self.p.waite(2)
         self.p.tryFindToclick(u".//*[contains(text(),'待办工作')]/ancestor::div[2]/following-sibling::div[1]/descendant::a[2]")
@@ -369,27 +332,18 @@ class Bussniss():
 
     def kaiTongDan(self,username,password):
         """省级提单人开通单"""
-        self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
-        self.p.waite(1)
-        self.p.clearKeys(".//*[@id='username']")
-        self.p.waite(1)
-        self.p.inputKeys(".//*[@id='username']",username)
-        self.p.waite(1)
-        self.p.clearKeys(".//*[@id='password']")
-        self.p.waite(1)
-        self.p.inputKeys(".//*[@id='password']",password)
+        self.p.Login(username,password)
         self.p.waite(2)
-        self.p.activeEvent(u"//*[contains(text(),'忘记密码')]/preceding-sibling::input[2]")
-        self.p.waite(2)self.p.tryTimesleep("iframe_ID_201")
+        self.p.tryTimesleep("iframe_ID_201")
         self.p.tryMoveLocation(u".//span[text()='超时工单提醒']")
         self.p.waite(2)
         self.p.activeEvent( u".//*[@id='menuDiv']/descendant::div[text()='网络资源勘查']")
         self.p.waite(2)
         self.p.shiFangFrame()
-mn = Bussniss()
-mn.kaiTongDan("tdr","Cmcc@121122")
-
-
+# mn = Bussniss()
+# mn.kaiTongDan("tdr","Cmcc@121122")
+#
+#
 
 
 

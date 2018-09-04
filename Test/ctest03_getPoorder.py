@@ -15,7 +15,7 @@ class getPoorder(unittest.TestCase):
     def setUp(self):
         self.b = Bussniss()
         self.m = MysqlClient()
-        self.b.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
+        # self.b.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
 
     def tearDown(self):
         self.b.m.dateAdd()
