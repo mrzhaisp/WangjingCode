@@ -338,12 +338,28 @@ class Bussniss():
         self.p.tryMoveLocation(u".//span[text()='超时工单提醒']")
         self.p.waite(2)
         self.p.activeEvent( u".//*[@id='menuDiv']/descendant::div[text()='网络资源勘查']")
+        self.p.activeEvent(u".//*[@id='menuDiv']/descendant::div[text()='业务开通']")
         self.p.waite(2)
         self.p.shiFangFrame()
-# mn = Bussniss()
-# mn.kaiTongDan("tdr","Cmcc@121122")
-#
-#
+        self.p.waite(2)
+        self.p.tryFindIframe("iframe_ID_2043")
+        self.p.activeEvent(".//*[@id='btnCustomerSelect-btnEl']")
+        self.p.waite(2)
+        self.p.inputKeys(u".//*[@id='keyWord-bodyEl']/input","99回")
+        self.p.waite(1)
+        self.p.activeEvent(u".//*[contains(text(),'99回归87')]")
+        self.p.waite(1)
+        self.p.activeEvent(u".//*[contains(text(),'确定')]/parent::button")
+        self.p.waite(2)
+        self.p.inputKeys(".//*[@id='poSpecName']/descendant::input","数据专线2.0")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@id='btnProductSpecSelect-btnEl']")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@class='x-grid-table x-grid-table-resizer']/descendant::input[1]")
+mn = Bussniss()
+mn.kaiTongDan("tdr","Cmcc@121122")
+
+
 
 
 
