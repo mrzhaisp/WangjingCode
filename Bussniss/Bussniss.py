@@ -44,8 +44,8 @@ class Bussniss():
 
     def pooderShenpi(self,username,password):
         u"""验证审批人"""
-        # self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
-        # self.p.waite(1)
+        self.p.openBrowser("http://10.248.26.37/ESOP/Login/login.do")
+        self.p.waite(1)
         self.p.clearKeys(".//*[@id='username']")
         self.p.waite(1)
         self.p.inputKeys(".//*[@id='username']",username)
@@ -167,6 +167,7 @@ class Bussniss():
         gmxl = self.p.tryText(u".//*[contains(text(),'送专线勘察和调度管理员审批')]").encode("utf-8")
         # print(gmxl)
         return gmxl
+
 
     def getPoorder(self,username,password):
         u'''得到poordernumber'''
@@ -371,6 +372,8 @@ class Bussniss():
 # sh.buLuShuxingSecond()
 
 
+mk =Bussniss()
+mk.pooderShenpi("tdr","Cmcc@121122")
 
 
 
