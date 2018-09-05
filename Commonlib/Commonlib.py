@@ -95,7 +95,7 @@ class Commonlib():
 
     def jsLeft(self):
         """处理横向滚动条"""
-        jsleft = 'document.getElementsByClassName("x-scroller-ct")[0].scrollLeft=1000'
+        jsleft = 'document.getElementsByClassName("x-scroller-ct")[0].scrollLeft=900'
         self.dr.execute_script(jsleft)
 
     def jsLeft1900(self):
