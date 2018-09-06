@@ -412,8 +412,8 @@ class Bussniss():
         self.p.activeEvent(u".//li[contains(text(),'有限分公司')]")
         self.p.waite(1)
         self.p.activeEvent(".//*[@id='submitButton-btnEl']")
-mn = Bussniss()
-mn.kaiTongDan("tdr","Cmcc@121122")
+# mn = Bussniss()
+# mn.kaiTongDan("tdr","Cmcc@121122")
 
 
 
