@@ -3,52 +3,55 @@ __author__ = 'zgd'
 from MySQLdb import *
 import time
 class MysqlClient():
+    def __init__(self):
+        # 创建数据库链接
+        self.db=connect(host='127.0.0.1',
+                          port=3306,
+                          db='poorderinfo',
+                          user='root',
+                          passwd='mysql',
+                          charset='utf8')
+        #创建游标
+        self.cs1 = self.db.cursor()
+
     def dateAdd(self,*args):
+        """得到poordernumber存库"""
         try:
-            #创建数据库连接
-            conn = connect(host='127.0.0.1', port=3306, db='poorderinfo', user='root', passwd='mysql', charset='utf8')
-            #创建游标
-            cs1 = conn.cursor()
-            #读取存入txt的单号和tag和创建时间
+            #打开txt文件 读取txt文件内的单号  读取存库
             f = open("../DataShare/zykc-ordernumbs.txt").readlines()
             for line in f:
                 list1 = line.replace('    ', ',')
                 po = list1[0:16]
                 tim = list1[17:36]
                 ocd = list1[37:45]
-            # count = cs1.execute("insert into poorders (poordernumber,createdate) VALUES ("+poorDerNumBer+","+creaTeDate+")")
-            #     value = [poorDerNumBer,creaTeDate,tag]
-            # count = cs1.execute("insert into poorders (poordernumber ,createdate,tag) VALUES (%s ,%s,%s)",value)
+            #游标去执行sql
             sql = """
             insert into poorders (poordernumber ,createdate,tag) VALUES ('%s','%s','%s')"""
-            count = cs1.execute(sql %(po ,tim,ocd))
+            count = self.cs1.execute(sql %(po ,tim,ocd))
             print(count)
-            conn.commit()
+            self.db.commit()
         except Exception,e:
             print(e)
         finally:
-            cs1.close()
-            conn.close()
+            #关闭游标，关闭数据库连接
+            self.cs1.close()
+            self.db.close()
 
     def dateSelec(self):
         try:
-            #创建数据库连接
-            conn = connect(host='127.0.0.1', port=3306, db='poorderinfo', user='root', passwd='mysql', charset='utf8')
-            #创建游标
-            cs1 = conn.cursor()
-            count = cs1.execute("SELECT a.poordernumber,a.createdate from poorders a ")
-            result = cs1.fetchone()
+            count = self.cs1.execute("SELECT a.poordernumber,a.createdate from poorders a ")
+            result = self.cs1.fetchone()
             num = result[0]
             caeateTime = result[1]
             print(num)
             print(caeateTime)
             # print(result)
-            conn.commit()
+            self.db.commit()
         except Exception,e:
             print(e)
         finally:
-            cs1.close()
-            conn.close()
+            self.cs1.close()
+            self.db.close()
 
 
 # if __name__=='__main__':
@@ -70,5 +73,6 @@ class MysqlClient():
     # add = MysqlClient()
     # nuMs = [poorDerNumBer,creaTeDate,tag]
     # add.dateAdd(*nuMs)
-
+    # M = MysqlClient()
+    # M.dateSelec()
 
