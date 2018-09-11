@@ -17,7 +17,7 @@ class CreateReporter():
                 stream=ftm,
                 verbosity=2,
                 title=u'37环境报告',
-                description=u'测试报告'
+                description=u'37数据专线2.0测试报告'
             ).run(mysuit)
 
 

@@ -330,7 +330,7 @@ class Bussniss():
         self.p.quitBrowser()
         return buluTextsec
 
-    def kaiTongDan(self,username,password):
+    def kaiTongShenPi(self,username,password):
         """省级提单人开通单"""
         self.p.Login(username,password)
         self.p.waite(2)
@@ -354,12 +354,14 @@ class Bussniss():
         self.p.waite(2)
         self.p.inputKeys(".//*[@id='poSpecName']/descendant::input",u"数据专线2.0")
         self.p.waite(2)
-        self.p.activeEvent("")
-        self.p.waite(2)
         self.p.activeEvent(".//*[@id='btnProductSpecSelect-btnEl']")
         self.p.waite(2)
         self.p.activeEvent(".//*[@id='window_vipLinePre-body']/following-sibling::div[1]/descendant::button[1]")
         self.p.waite(2)
+        #找到合同点击合同
+        self.p.activeEvent(".//*[@id='poAgreementId-triggerWrap']/div")
+        self.p.waite(2)
+        self.p.activeEvent(u".//*[contains(text(),'开通的合同')]")
         #安装调测费用
         self.p.activeEvent(".//*[@id='vipGrid-body']/descendant::td[13]")
         self.p.waite(2)
@@ -412,8 +414,122 @@ class Bussniss():
         self.p.activeEvent(u".//li[contains(text(),'有限分公司')]")
         self.p.waite(1)
         self.p.activeEvent(".//*[@id='submitButton-btnEl']")
-# mn = Bussniss()
-# mn.kaiTongDan("tdr","Cmcc@121122")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[text()='Yes']/parent::button")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@id='poFirstNode-triggerWrap']/div")
+        self.p.waite(2)
+        # self.p.activeEvent(u".//*[contains(text(),'送总部业务调度员审批派单')]")
+        # self.p.waite(2)
+        gtl3 = self.p.tryText(u".//*[@id='window_poRateplan_vipline']/following-sibling::div[12]/descendant::li")
+        # print(gtl3)
+        return gtl3
+
+    def KaiTongPooNum(self,username,password):
+        """开通单号"""
+        self.p.Login(username,password)
+        self.p.waite(2)
+        self.p.tryTimesleep("iframe_ID_201")
+        self.p.tryMoveLocation(u".//span[text()='超时工单提醒']")
+        self.p.waite(2)
+        self.p.activeEvent(u".//*[@id='menuDiv']/descendant::div[text()='业务开通']")
+        self.p.waite(2)
+        self.p.shiFangFrame()
+        self.p.waite(2)
+        self.p.tryFindIframe("iframe_ID_2043")
+        self.p.activeEvent(".//*[@id='btnCustomerSelect-btnEl']")
+        self.p.waite(2)
+        self.p.inputKeys(u".//*[@id='keyWord-bodyEl']/input",u"99回")
+        self.p.waite(1)
+        self.p.activeEvent( u".//span[text()='查 询']/parent::button")
+        self.p.waite(1)
+        self.p.activeEvent(u".//*[contains(text(),'99回归87')]")
+        self.p.waite(1)
+        self.p.activeEvent(u".//*[contains(text(),'确定')]/parent::button")
+        self.p.waite(2)
+        self.p.inputKeys(".//*[@id='poSpecName']/descendant::input",u"数据专线2.0")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@id='btnProductSpecSelect-btnEl']")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@id='window_vipLinePre-body']/following-sibling::div[1]/descendant::button[1]")
+        self.p.waite(2)
+        #找到合同点击合同
+        self.p.activeEvent(".//*[@id='poAgreementId-triggerWrap']/div")
+        self.p.waite(2)
+        self.p.activeEvent(u".//*[contains(text(),'开通的合同')]")
+        self.p.waite(2)
+        #期望保证等级
+        self.p.activeEvent(".//*[@id='vipGrid-body']/descendant::td[10]")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@id='vipGrid-body']/div[4]/div[1]/descendant::div[4]")
+        self.p.waite(1)
+        #选择A级服务
+        self.p.activeEvent(".//*[@id='window_vipLinePre']/following-sibling::div[20]/descendant::li[3]")
+        #安装调测费用
+        self.p.activeEvent(".//*[@id='vipGrid-body']/descendant::td[13]")
+        self.p.waite(2)
+        self.p.inputKeys(".//*[@id='vipGrid-body']/div[2]/descendant::input","500")
+        self.p.waite(2)
+        #A段结算比例
+        self.p.activeEvent(".//*[@id='vipGrid-body']/descendant::td[14]")
+        self.p.waite(2)
+        self.p.inputKeys(".//*[@id='vipGrid-body']/div[3]/descendant::input","50")
+        #Z端结算比例
+        self.p.activeEvent(".//*[@id='vipGrid-body']/descendant::td[15]")
+        self.p.waite(2)
+        self.p.inputKeys(".//*[@id='vipGrid-body']/div[4]/descendant::input","50")
+        #功能费套餐选项
+        self.p.activeEvent(".//*[@id='vipGrid-body']/descendant::td[16]/descendant::input")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@id='poPolicyForm_vipLine-body']/descendant::input[1]")
+        self.p.waite(2)
+        self.p.inputKeys(".//*[@id='poPolicyForm_vipLine-body']/descendant::input[2]","666")
+        self.p.waite(2)
+        self.p.activeEvent(u".//*[text()='清空']/ancestor::div[1]/preceding-sibling::div/descendant::button")
+        self.p.waite(2)
+        self.p.tryMoveLocation(u".//*[contains(text(),'账期生效规则')]")
+        self.p.waite(1)
+        self.p.jsLeft()
+        #功能费A段结算比例
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@id='vipGrid-body']/descendant::td[18]")
+        self.p.waite(2)
+        self.p.inputKeys(".//*[@id='vipGrid-body']/div[5]/descendant::input","50")
+        self.p.waite(2)
+        #功能费Z段结算比例
+        self.p.activeEvent(".//*[@id='vipGrid-body']/descendant::td[19]")
+        self.p.waite(2)
+        self.p.inputKeys(".//*[@id='vipGrid-body']/div[6]/descendant::input","50")
+        self.p.waite(2)
+        #支付模式
+        self.p.activeEvent(".//*[@id='businessModeCombo-triggerWrap']/div[1]")
+        self.p.waite(1)
+        self.p.activeEvent(u".//*[text()='一点支付']")
+        self.p.waite(1)
+        #账期生效规则
+        self.p.activeEvent(".//*[@id='effectRuleCombo-triggerWrap']/div[1]")
+        self.p.waite(1)
+        self.p.activeEvent(u".//*[contains(text(),'下账期生效')]")
+        #签约主体
+        self.p.waite(1)
+        self.p.activeEvent(".//*[@id='contractMainId-triggerWrap']/div[1]")
+        self.p.waite(1)
+        self.p.activeEvent(u".//li[contains(text(),'有限分公司')]")
+        self.p.waite(1)
+        self.p.activeEvent(".//*[@id='submitButton-btnEl']")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[text()='Yes']/parent::button")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@id='poFirstNode-triggerWrap']/div")
+        self.p.waite(2)
+        self.p.activeEvent(u".//*[@id='window_poRateplan_vipline']/following-sibling::div[12]/descendant::li")
+        self.p.waite(2)
+        self.p.activeEvent(".//*[@id='window_poRateplan_vipline']/following-sibling::div[9]/descendant::button[1]")
+
+    def FengZhuang(self,username,password):
+        self.p.PoorderShen(username,password)
+mn = Bussniss()
+mn.FengZhuang("tdr","Cmcc@121122")
 
 
 

@@ -35,6 +35,15 @@
         <password>Cmcc@121122</password>
         <epxect>补录完成</epxect>
     </bulushuxingSecond>
+
+    <!--客户经理提单开通单神审批-->
+    <kaitongdanshenpi>
+        <username>tdr</username>
+        <password>Cmcc@121122</password>
+        <epxect>送总部业务调度员审批派单</epxect>
+    </kaitongdanshenpi>
+
+
 </node>
 
 
