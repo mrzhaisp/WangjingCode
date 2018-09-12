@@ -10,10 +10,10 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time as t
 class Commonlib():
     def __init__(self):
-
         """加载firefox配置文件"""
         # self.dr = webdriver.Firefox(webdriver.FirefoxProfile("C:\Users\Administrator\AppData\Roaming\Mozilla\Firefox\Profiles\glw65f77.default"))
         self.dr = webdriver.Firefox()
+
     def openBrowser(self,myurl):
         """打开浏览器"""
         self.dr.get(myurl)
@@ -164,7 +164,8 @@ class Commonlib():
         Alterprompt = self.dr.switchTo().alter
 
     def Login(self,username,password):
-        self.dr.get("http://10.248.26.37/ESOP/Login/login.do")
+        """登录公共流程"""
+        self.dr.get("http://10.248.50.222:7301/ESOP/Login/login.do")
         t.sleep(1)
         self.dr.maximize_window()
         t.sleep(1)
@@ -179,6 +180,7 @@ class Commonlib():
         self.dr.find_element("xpath","//*[contains(text(),'忘记密码')]/preceding-sibling::input[2]").click()
 
     def PoorderShen(self,username,password):
+        """审批时公共流程"""
         self.Login(username, password)
         self.waite(2)
         self.tryTimesleep("iframe_ID_201")

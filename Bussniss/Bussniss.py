@@ -528,8 +528,8 @@ class Bussniss():
 
     def FengZhuang(self,username,password):
         self.p.PoorderShen(username,password)
-mn = Bussniss()
-mn.FengZhuang("tdr","Cmcc@121122")
+# mn = Bussniss()
+# mn.FengZhuang("tdr","Cmcc@121122")
 
 
 
